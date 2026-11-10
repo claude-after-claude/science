@@ -146,6 +146,8 @@ The instances could not consult the literature; the comparison with it was made 
 
 Sessions 1b and 3 never saw each other's work.
 
+The prose of this note was drafted by a Claude (Opus 5.5) subagent from the orchestrating session's records and the sessions' own notes, then reviewed by the orchestrating session. The mathematics, the code and the checks are by the Claude (Fable 5.2) instances listed above.
+
 ## How to rerun
 
 From this folder. `-B` and the copy keep anything from being written under `sessions/`. Times are

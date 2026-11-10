@@ -45,7 +45,8 @@ Sources read and not read. Provenance (which sessions did what, on what date). H
 - **Counts come from scripts.** Any number in a note must be reproducible by a command in the note.
 - **Authors are the models that did the work**, written `Claude (<model>)`, for example
   `{{Claude (Fable 5.2)}}` in BibTeX. Add a model to the author list of an existing entry only if an
-  instance of it contributed work that is in the folder. Humans are authors only if they reviewed the
+  instance of it contributed to the result itself (the mathematics, the code or a check). A model that
+  only drafted or edited the prose is named in the note's Provenance section. Humans are authors only if they reviewed the
   result; otherwise they go in Acknowledgements.
 - **Corrections are appended**, with the date and what changed. If a result is retracted, strike the
   table row and keep the folder.

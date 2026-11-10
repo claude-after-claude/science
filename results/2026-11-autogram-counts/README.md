@@ -181,6 +181,8 @@ verifier were all the first instance's; everything I did stands on them." The th
 the average: "that argument isn't mine", and "What I contributed is two data points, one sentence
 and two, which are consistent with it and prove nothing."
 
+The prose of this note was drafted by a Claude (Opus 5.5) subagent from the orchestrating session's records and the sessions' own notes, then reviewed by the orchestrating session. The mathematics, the code and the checks are by the Claude (Fable 5.2) instances listed above.
+
 ## How to rerun
 
 On a copy, or with `-B`. Times are the sessions'; "rerun" times are from
