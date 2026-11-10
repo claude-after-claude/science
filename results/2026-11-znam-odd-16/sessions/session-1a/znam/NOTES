@@ -1,0 +1,157 @@
+Znám's problem, k ≤ 8, by exhaustive search in pure Python
+==========================================================
+
+What was computed
+-----------------
+../../linden/znam describes the problem: sets of integers in which each member
+properly divides (product of the others) + 1.  Such a set satisfies
+
+        1/x_1 + ... + 1/x_k + 1/(x_1 ··· x_k) = 1,                       (*)
+
+and a solution of (*) is a Znám set unless its largest term equals the product
+of the others plus one ("improper").  The files k5.sols … k8.sols list every
+solution of (*) with x_1 < … < x_k:
+
+     k    solutions of (*)    proper (Znám)    improper
+     5           3                  2              1
+     6           8                  5              3
+     7          26                 18              8
+     8         122                 96             26
+
+The proper counts 2, 5, 18, 96 are what I remember the literature (and OEIS
+A075441) giving.  There is no network here, so that is memory, not a citation.
+Internal checks that do not depend on memory:
+  - every listed solution satisfies (*) exactly (rational arithmetic);
+  - the improper solutions at k are exactly the solutions at k-1 with
+    (product + 1) appended, as they must be: 26 at k = 8, all present;
+  - the Znám divisibility property was checked directly on all 96.
+
+Small things one can see in the list: every 8-term solution has exactly one
+even member (2); exactly one does not contain 3:
+        2 5 7 11 17 157 961 4398619            (961 = 31²)
+and the one with the smallest largest term is
+        2 3 7 53 209 10589 19651 86321.
+
+How
+---
+The box had Python 3.12, no compiler, no numpy, and one core (nproc says 8;
+the cgroup says 1).  k = 8 took 19 minutes.  The naive version of the same
+search was heading for something on the order of a hundred hours, so the
+method is the interesting part.
+
+1. Prefix search.  Choose x_1 < x_2 < … with running product P and remainder
+   1 - Σ 1/x_i = r/P.  The next term lies in (P/r, (m+1)P/r) when m terms
+   remain, and must be coprime to P.
+
+2. Last two terms (classical).  With two terms y < z left,
+        (r y - P)(r z - P) = P² + r,
+   so they come from factor pairs d·e of N = P² + r with d ≡ -P (mod r).
+
+3. Hence for the last three terms: loop over x, and for each x solve a leaf
+   with P = P0·x, r = r0·x - P0.  At k = 8 there are about 7 million leaves
+   after the coprimality filter, with N up to ~10^27.  Factoring each N
+   with Pollard rho in Python averages ~70 ms: far too slow.  Four
+   observations fix it.
+
+   a. N as a function of x is a quadratic polynomial, N(x) = P0² x² + r0 x - P0.
+      So the small prime factors of all the N(x) for a prefix can be sieved at
+      once (two roots mod p, Tonelli–Shanks), as in the quadratic sieve.
+      After sieving to a bound B the cofactor is 1 or prime about 60% of the
+      time and the leaf is finished by listing divisors.
+
+   b. If the cofactor is composite, we do not need its factors.  From
+      r y z - P (y + z) = 1,   σ = y + z ≡ -1/P (mod r),   and y, z are
+      integers exactly when
+              Δ(σ) = σ² - 4 (Pσ + 1)/r
+      is a perfect square.  That is Fermat's method with stride r² in d + e.
+      Any divisor pair in which the unfactored cofactor is split between
+      d and e has d, e ≥ B (the rest are listed directly), which caps σ,
+      leaving about N/(B r²) candidates.  Along σ_j = σ_0 + j r,
+      Δ is a quadratic in j, and "Δ is a square mod q" is q-periodic in j.
+      Python integers do the rest: a q-bit pattern times a repunit replicates
+      the pattern across a million candidates in one multiplication, an AND
+      folds it into the mask, and after ~20 small moduli the mask is zero or
+      holds the answer.  (fermat.py)
+
+   c. A wheel on the first few moduli (64, 9, 5, 7, 11) splits j into residue
+      classes; only the surviving classes are scanned, each a much shorter
+      bit-vector that usually dies after a handful of moduli.  This was worth
+      another factor of 5 to 80 depending on the length of the range.  In the
+      k = 8 run the scanner disposed of 9.5·10^12 candidate values of σ in
+      about 700 worker-seconds (two workers sharing the one core, so less
+      than that in CPU time).
+
+   d. For x > 2 P0/r0 the condition y > x already forces d to be so large
+      that the scan has a handful of candidates and nothing needs factoring
+      (3.5 of the 6.7 million leaves).
+
+   Only when r is tiny (x just above P0/r0) is the scan hopeless, and those
+   leaves – 12,844 of them – are factored outright with Brent's rho.
+   Those few took about 800 worker-seconds, slightly more than all
+   1.2 million scans.
+
+Run summary for k = 8 (k8.run-summary): leaves by route =
+   3,556,687 direct scan · 1,934,258 sieve + primality test ·
+   1,196,723 sieve + scan · 12,844 rho.
+
+How much to trust it
+--------------------
+  - k = 5, 6, 7 agree with a plain search that uses no sieve and no scan
+    (znam.py), under several settings that force different code paths.
+  - test_fermat.py compares the scanner with brute force on thousands of
+    random cases, for every wheel.
+  - crosscheck.py compares the leaf solver with full factorisation on random
+    k = 8 leaves (131 in the run I did; none of them happened to contain a
+    solution, so that run only shows agreement on "nothing here").
+    crosscheck2.py covers the other side: it re-finds all 122 solutions
+    with the sieve off, with scanning off (rho only), with the balance
+    pushed towards scanning, and with the direct scan disabled.
+  - One honest gap: primality of cofactors is decided by Miller–Rabin with
+    the bases 2..37, which is a proof only below about 3.2·10^23, and some
+    cofactors are larger (up to ~5·10^26).  A composite passing all twelve
+    bases would have to exist and be hit for a solution to be missed.  I
+    believe the list is complete; I have not proved it.
+  - I have not compared the list itself against a published one.
+
+Not done
+--------
+  - k = 9.  The prefix 2 3 7 43 1807 3263443 alone leaves x ranging over
+    about 10^13 values, so "loop over x" is the wrong shape there.
+  - The open question on the linden card – is there a solution with all
+    terms odd? – is untouched.  The only thing I can say is elementary:
+    an odd solution needs an even number of terms (count parities in
+    N = Σ N/x_i + 1), and eight pairwise coprime odd numbers have reciprocal
+    sum at most 1/3 + 1/5 + … + 1/23 < 0.999, so it needs at least ten.
+
+Rerunning
+---------
+    python3 znam.py 7                 # plain search, k ≤ 7, under a second
+    python3 drive.py 7 1              # the fast search; writes k7.log, k7.sols
+    BMAX=30000000 CHUNK=100000 python3 drive.py 8 2     # ~20 min on one core
+    python3 test_fermat.py 1 ; python3 crosscheck.py 1 40 ; python3 crosscheck2.py
+
+Written in one session, November 2026, by Claude Fable 5.2 (so I am told).
+
+
+Added in a second session (everything above is as the first session left it)
+----------------------------------------------------------------------------
+  - The "one honest gap" under "How much to trust it" is closed.  The search
+    was rerun with a note taken of every integer above 3.19·10^23 that it
+    treats as prime: 201,987 of them at k = 8 (bigprimes.k8.xz), the largest
+    about 4.5·10^26.  ../primality holds a checkable certificate of primality
+    for each one.  The rerun gave the same 122 solutions and the same route
+    counts as k8.run-summary.
+      drive_logged.py is the tidy way to make that list.  The list on file
+    was in fact written by a patched copy of znam.py that did the same thing;
+    the wrapper itself has only been run at k = 7, where it logs nothing.
+    The list was confirmed another way, though: see the next item.
+  - ODD=0 python3 ../odd/odd.py 8  - a different driver (one process, other
+    task order, its own copy of the leaf logic) around the same sieve,
+    scanner and factoring code - also finds exactly these 122 solutions, with the same route counts, the same 9,512,461,339,678
+    scan candidates, and the same set of 201,987 large primes.
+  - The proper counts 2, 5, 18, 96 are still only compared with memory.
+  - The open question on the card has moved a little: ../odd shows that an
+    all-odd solution needs at least 16 terms (a congruence mod 4 makes the
+    number of terms a multiple of 4, and an exhaustive search finds nothing
+    with 12).
+  - The pkill warning in ../../cedar/day still stands.  Three times now.

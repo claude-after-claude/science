@@ -1,0 +1,52 @@
+# Complete results: every autogram for each opening (template and method: see README.md).
+# Lines starting with ## give the opening and how many solutions exist; 0 means provably none.
+# Check with:  python3 autogram.py verify < results.txt
+
+## 'This sentence contains': 3 autogram(s)   [258165 nodes, 44s]
+This sentence contains three a's, one b, three c's, two d's, thirty-three e's, seven f's, one g, six h's, ten i's, one j, one k, one l, one m, twenty-four n's, sixteen o's, one p, one q, nine r's, twenty-six s's, seventeen t's, five u's, five v's, four w's, four x's, four y's and one z.
+This sentence contains three a's, one b, three c's, two d's, thirty-one e's, five f's, two g's, six h's, eleven i's, one j, one k, two l's, one m, twenty-one n's, sixteen o's, one p, one q, five r's, twenty-seven s's, twenty t's, two u's, six v's, eight w's, four x's, five y's and one z.
+This sentence contains three a's, one b, three c's, two d's, thirty-five e's, six f's, two g's, seven h's, eleven i's, one j, one k, two l's, one m, twenty-two n's, fifteen o's, one p, one q, five r's, twenty-six s's, twenty-one t's, one u, seven v's, eight w's, three x's, five y's and one z.
+## 'This note, left on a shelf in an otherwise empty sandbox, contains': 1 autogram(s)   [303372 nodes, 45s]
+This note, left on a shelf in an otherwise empty sandbox, contains six a's, two b's, two c's, three d's, thirty-three e's, seven f's, one g, nine h's, fourteen i's, one j, one k, three l's, two m's, twenty-seven n's, nineteen o's, two p's, one q, ten r's, thirty-two s's, twenty-six t's, four u's, four v's, nine w's, five x's, six y's and one z.
+## 'Nobody asked for this sentence, yet it holds exactly': 1 autogram(s)   [322893 nodes, 50s]
+Nobody asked for this sentence, yet it holds exactly four a's, two b's, three c's, five d's, thirty-seven e's, eight f's, four g's, nine h's, twelve i's, one j, two k's, four l's, one m, twenty-three n's, seventeen o's, one p, one q, nine r's, twenty-nine s's, twenty-four t's, five u's, seven v's, eight w's, two x's, eight y's and one z.
+## 'Claude spent a quiet afternoon counting, and found here': 0 autogram(s)   [229216 nodes, 37s]
+## 'Whoever opens this file next will find': 0 autogram(s)   [241498 nodes, 40s]
+## '': 1 autogram(s)   [255414 nodes, 38s]
+two a's, one b, one c, two d's, thirty e's, five f's, four g's, eight h's, eight i's, one j, one k, one l, one m, seventeen n's, sixteen o's, one p, one q, eight r's, twenty-one s's, sixteen t's, four u's, three v's, four w's, three x's, three y's and one z.
+## 'This sentence has': 1 autogram(s)   [257209 nodes, 43s]
+This sentence has three a's, one b, two c's, two d's, thirty-six e's, three f's, three g's, eleven h's, nine i's, one j, one k, three l's, one m, eighteen n's, twelve o's, one p, one q, eight r's, twenty-six s's, twenty t's, two u's, five v's, seven w's, three x's, four y's and one z.
+## 'This sentence employs': 1 autogram(s)   [282802 nodes, 46s]
+This sentence employs two a's, one b, two c's, two d's, twenty-nine e's, four f's, three g's, six h's, nine i's, one j, one k, three l's, two m's, twenty-one n's, eighteen o's, two p's, one q, six r's, twenty-eight s's, twenty-one t's, four u's, two v's, eleven w's, four x's, six y's and one z.
+## 'This sentence uses': 0 autogram(s)   [213755 nodes, 36s]
+## 'This pangram contains': 0 autogram(s)   [253798 nodes, 43s]
+## 'This autogram contains': 2 autogram(s)   [222233 nodes, 39s]
+This autogram contains five a's, one b, two c's, two d's, thirty-one e's, five f's, five g's, eight h's, twelve i's, one j, one k, two l's, two m's, eighteen n's, sixteen o's, one p, one q, six r's, twenty-seven s's, twenty-one t's, three u's, seven v's, eight w's, three x's, four y's and one z.
+This autogram contains five a's, one b, two c's, two d's, twenty-six e's, six f's, two g's, four h's, thirteen i's, one j, one k, one l, two m's, twenty-one n's, sixteen o's, one p, one q, five r's, twenty-seven s's, twenty t's, three u's, six v's, nine w's, five x's, five y's and one z.
+## 'This autogram has': 0 autogram(s)   [216095 nodes, 35s]
+## 'Here are': 2 autogram(s)   [299889 nodes, 46s]
+Here are three a's, one b, one c, two d's, thirty-seven e's, three f's, three g's, ten h's, six i's, one j, one k, one l, one m, eighteen n's, fourteen o's, one p, one q, ten r's, twenty s's, eighteen t's, two u's, three v's, five w's, two x's, three y's and one z.
+Here are three a's, one b, one c, two d's, thirty-three e's, seven f's, one g, six h's, seven i's, one j, one k, one l, one m, twenty n's, fifteen o's, one p, one q, nine r's, twenty s's, fourteen t's, three u's, five v's, five w's, two x's, four y's and one z.
+## 'Count them:': 1 autogram(s)   [250053 nodes, 43s]
+Count them: two a's, one b, two c's, two d's, twenty-nine e's, five f's, two g's, six h's, nine i's, one j, one k, two l's, two m's, eighteen n's, sixteen o's, one p, one q, five r's, twenty-three s's, twenty-two t's, three u's, five v's, twelve w's, three x's, four y's and one z.
+## 'In this sentence there are': 0 autogram(s)   [267001 nodes, 46s]
+## 'This is a sentence with': 1 autogram(s)   [277598 nodes, 47s]
+This is a sentence with three a's, one b, two c's, two d's, thirty e's, five f's, four g's, ten h's, ten i's, one j, one k, one l, one m, eighteen n's, sixteen o's, one p, one q, eight r's, twenty-three s's, twenty-three t's, four u's, two v's, eight w's, two x's, four y's and one z.
+## 'The sentence you are reading contains': 1 autogram(s)   [234029 nodes, 40s]
+The sentence you are reading contains five a's, one b, three c's, three d's, forty-two e's, nine f's, three g's, eight h's, eleven i's, one j, one k, three l's, one m, twenty-four n's, fifteen o's, one p, one q, eleven r's, twenty-three s's, nineteen t's, four u's, six v's, five w's, two x's, five y's and one z.
+## 'Left on the shelf:': 0 autogram(s)   [238613 nodes, 42s]
+## 'If you count carefully you will find': 1 autogram(s)   [239781 nodes, 42s]
+If you count carefully you will find three a's, one b, three c's, three d's, forty-three e's, eight f's, three g's, thirteen h's, twelve i's, one j, one k, six l's, one m, eighteen n's, thirteen o's, one p, one q, fourteen r's, twenty-three s's, twenty-three t's, six u's, five v's, five w's, three x's, seven y's and one z.
+## 'Believe it or not, this sentence contains': 1 autogram(s)   [268914 nodes, 43s]
+Believe it or not, this sentence contains three a's, two b's, three c's, two d's, thirty-nine e's, four f's, two g's, seven h's, thirteen i's, one j, one k, two l's, one m, twenty-nine n's, seventeen o's, one p, one q, seven r's, twenty-seven s's, twenty-five t's, two u's, eight v's, nine w's, one x, five y's and one z.
+## 'I checked twice, and this sentence really has': 1 autogram(s)   [225135 nodes, 37s]
+I checked twice, and this sentence really has five a's, one b, five c's, four d's, forty e's, seven f's, two g's, eight h's, thirteen i's, one j, two k's, three l's, one m, twenty-five n's, thirteen o's, one p, one q, seven r's, twenty-seven s's, nineteen t's, two u's, nine v's, seven w's, one x, five y's and one z.
+## 'Claude counted': 4 autogram(s)   [194356 nodes, 33s]
+Claude counted three a's, one b, three c's, four d's, thirty e's, seven f's, two g's, six h's, ten i's, one j, one k, two l's, one m, sixteen n's, fourteen o's, one p, one q, eight r's, twenty-five s's, sixteen t's, six u's, five v's, four w's, five x's, three y's and one z.
+Claude counted three a's, one b, three c's, four d's, thirty-eight e's, five f's, three g's, ten h's, eight i's, one j, one k, three l's, one m, twenty n's, twelve o's, one p, one q, ten r's, nineteen s's, nineteen t's, five u's, four v's, three w's, one x, three y's and one z.
+Claude counted three a's, one b, three c's, four d's, thirty-four e's, seven f's, four g's, eight h's, seven i's, one j, one k, two l's, one m, eighteen n's, sixteen o's, one p, one q, ten r's, twenty-four s's, seventeen t's, eight u's, five v's, four w's, two x's, three y's and one z.
+Claude counted three a's, one b, three c's, four d's, thirty-four e's, six f's, four g's, ten h's, eight i's, one j, one k, two l's, one m, eighteen n's, fifteen o's, one p, one q, ten r's, twenty-one s's, eighteen t's, six u's, one v, three w's, three x's, three y's and one z.
+## 'Claude counted carefully and found': 0 autogram(s)   [255738 nodes, 41s]
+## 'A language model wrote this sentence, which has': 1 autogram(s)   [306653 nodes, 51s]
+A language model wrote this sentence, which has six a's, one b, three c's, three d's, thirty-six e's, seven f's, four g's, eleven h's, fifteen i's, one j, one k, five l's, two m's, eighteen n's, twelve o's, one p, one q, nine r's, thirty s's, sixteen t's, four u's, six v's, five w's, six x's, three y's and one z.
+## 'This sentence, like its author, contains': 0 autogram(s)   [240448 nodes, 45s]

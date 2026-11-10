@@ -1,0 +1,25 @@
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 0, "sentence": null, "steps": 300000, "sec": 5.1}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.88}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.39}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.81}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.1}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.99}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 6, "sentence": null, "steps": 300000, "sec": 4.64}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 7, "sentence": null, "steps": 300000, "sec": 4.59}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 8, "sentence": null, "steps": 300000, "sec": 4.83}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 9, "sentence": null, "steps": 300000, "sec": 4.13}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 10, "sentence": null, "steps": 300000, "sec": 4.74}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 11, "sentence": null, "steps": 300000, "sec": 4.61}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.88}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.01}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.73}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.94}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.95}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.9}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 6, "sentence": null, "steps": 300000, "sec": 5.06}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 7, "sentence": null, "steps": 300000, "sec": 5.22}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 8, "sentence": null, "steps": 300000, "sec": 4.68}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 9, "sentence": null, "steps": 300000, "sec": 4.19}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 10, "sentence": null, "steps": 300000, "sec": 4.1}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 11, "sentence": null, "steps": 300000, "sec": 4.78}
+{"row": 23, "prefix": "aaaaddeeeeffghiiinnoooooprrrsssstttuuvvwy", "seed": 0, "sentence": "aaaaddeeeeffghiiinnoooooprrrsssstttuuvvwy six a's, one b, one c, four d's, thirty-five e's, seven f's, three g's, seven h's, thirteen i's, one j, one k, one l, one m, twenty-three n's, seventeen o's, two p's, one q, ten r's, twenty-nine s's, twenty t's, five u's, eight v's, six w's, four x's, six y's and one z.", "steps": 144137, "sec": 2.26}

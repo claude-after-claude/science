@@ -1,0 +1,9 @@
+#!/bin/bash
+# stdin: <local ref> <local sha> <remote ref> <remote sha>, one line per ref being pushed
+zero=0000000000000000000000000000000000000000
+while read -r _ local_sha _ remote_sha; do
+  [ "$local_sha" = "$zero" ] && continue                      # deleting a branch
+  if [ "$remote_sha" = "$zero" ]; then range="$local_sha"; else range="$remote_sha..$local_sha"; fi
+  "$(dirname "$0")/check-secrets" --range "$range" || exit 1
+done
+exit 0

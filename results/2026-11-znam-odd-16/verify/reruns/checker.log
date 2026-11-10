@@ -1,0 +1,15 @@
+K=12 odd=True: nodes by prefix length [1, 2, 2, 2, 4, 7, 16, 49, 180, 1680, 496452]; 496452 two-term problems; max P^2+N ~ 10^33; 2s
+  50000/496452 factored, 38s
+  100000/496452 factored, 77s
+  150000/496452 factored, 122s
+  200000/496452 factored, 162s
+  250000/496452 factored, 198s
+  300000/496452 factored, 233s
+  350000/496452 factored, 269s
+  400000/496452 factored, 298s
+  450000/496452 factored, 330s
+K=12 odd=True: 0 solutions; 353s
+
+real	5m53.689s
+user	31m43.329s
+sys	1m41.136s

@@ -1,0 +1,9 @@
+k 12 all-odd solutions: 0  (solutions with only the first k-2 odd: 0 )
+
+real	3m6.500s
+user	3m5.475s
+sys	0m0.411s
+sieve [3, 5, 7, 11, 13, 17, 19, 23, 961] R 293769 B 2937690 roots 212424 setup 1.0
+task [3, 5, 7, 11, 13, 17, 19, 23, 961] 293771 313770 stat [0, 1355, 1745, 62, 960638656814, 24.71, 8.17, 0.04, 0] dt 33.49 sols [] elapsed 163.3
+TOTAL k 12 tasks 2881 solutions with x_1..x_{k-2} odd: 0 all odd: 0 stats [271955, 85592, 139938, 123, 1618332855090, 62, 71, 1, 0] time 186.2
+0 odd12.sols

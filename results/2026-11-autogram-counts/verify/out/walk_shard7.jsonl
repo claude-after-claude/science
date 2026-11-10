@@ -1,0 +1,222 @@
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 0, "sentence": null, "steps": 300000, "sec": 5.25}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.11}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 2, "sentence": null, "steps": 300000, "sec": 5.85}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.98}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 4, "sentence": null, "steps": 300000, "sec": 5.26}
+{"row": 7, "prefix": "aaaaabcccdeeeeeeeeeeehhhhhhhiiiikllnnnnooprrrssssstttuwwwy", "seed": 5, "sentence": null, "steps": 300000, "sec": 5.77}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.95}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.79}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.87}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.52}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.82}
+{"row": 15, "prefix": "aaabcddeeeeeeeeeffghhhiiiikkklmmnnnnnoooooooooprsssttttuw", "seed": 5, "sentence": null, "steps": 300000, "sec": 5.65}
+{"row": 23, "prefix": "aaaaddeeeeffghiiinnoooooprrrsssstttuuvvwy", "seed": 0, "sentence": "aaaaddeeeeffghiiinnoooooprrrsssstttuuvvwy six a's, one b, one c, four d's, thirty-five e's, seven f's, three g's, seven h's, thirteen i's, one j, one k, one l, one m, twenty-three n's, seventeen o's, two p's, one q, ten r's, twenty-nine s's, twenty t's, five u's, eight v's, six w's, four x's, six y's and one z.", "steps": 144137, "sec": 3.01}
+{"row": 23, "prefix": "aaaaddeeeeffghiiinnoooooprrrsssstttuuvvwy", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.7}
+{"row": 23, "prefix": "aaaaddeeeeffghiiinnoooooprrrsssstttuuvvwy", "seed": 2, "sentence": "aaaaddeeeeffghiiinnoooooprrrsssstttuuvvwy six a's, one b, one c, four d's, thirty-five e's, seven f's, three g's, seven h's, thirteen i's, one j, one k, one l, one m, twenty-three n's, seventeen o's, two p's, one q, ten r's, twenty-nine s's, twenty t's, five u's, eight v's, six w's, four x's, six y's and one z.", "steps": 52659, "sec": 0.73}
+{"row": 23, "prefix": "aaaaddeeeeffghiiinnoooooprrrsssstttuuvvwy", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.5}
+{"row": 23, "prefix": "aaaaddeeeeffghiiinnoooooprrrsssstttuuvvwy", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.67}
+{"row": 23, "prefix": "aaaaddeeeeffghiiinnoooooprrrsssstttuuvvwy", "seed": 5, "sentence": null, "steps": 300000, "sec": 5.09}
+{"row": 31, "prefix": "aaaaaaaabccdeeeeeeeghiilllmnnnoorssstuuwww", "seed": 0, "sentence": null, "steps": 300000, "sec": 5.4}
+{"row": 31, "prefix": "aaaaaaaabccdeeeeeeeghiilllmnnnoorssstuuwww", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.21}
+{"row": 31, "prefix": "aaaaaaaabccdeeeeeeeghiilllmnnnoorssstuuwww", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.43}
+{"row": 31, "prefix": "aaaaaaaabccdeeeeeeeghiilllmnnnoorssstuuwww", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.23}
+{"row": 31, "prefix": "aaaaaaaabccdeeeeeeeghiilllmnnnoorssstuuwww", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.82}
+{"row": 31, "prefix": "aaaaaaaabccdeeeeeeeghiilllmnnnoorssstuuwww", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.67}
+{"row": 39, "prefix": "aent", "seed": 0, "sentence": "aent three a's, one b, one c, two d's, twenty-nine e's, six f's, one g, four h's, nine i's, one j, one k, one l, one m, twenty-three n's, sixteen o's, one p, one q, six r's, twenty-one s's, fifteen t's, three u's, two v's, six w's, five x's, four y's and one z.", "steps": 69301, "sec": 0.96}
+{"row": 39, "prefix": "aent", "seed": 1, "sentence": "aent three a's, one b, one c, two d's, twenty-nine e's, six f's, one g, four h's, nine i's, one j, one k, one l, one m, twenty-three n's, sixteen o's, one p, one q, six r's, twenty-one s's, fifteen t's, three u's, two v's, six w's, five x's, four y's and one z.", "steps": 131776, "sec": 2.2}
+{"row": 39, "prefix": "aent", "seed": 2, "sentence": "aent three a's, one b, one c, two d's, twenty-nine e's, six f's, one g, four h's, nine i's, one j, one k, one l, one m, twenty-three n's, sixteen o's, one p, one q, six r's, twenty-one s's, fifteen t's, three u's, two v's, six w's, five x's, four y's and one z.", "steps": 95251, "sec": 1.74}
+{"row": 39, "prefix": "aent", "seed": 3, "sentence": "aent three a's, one b, one c, two d's, twenty-nine e's, six f's, one g, four h's, nine i's, one j, one k, one l, one m, twenty-three n's, sixteen o's, one p, one q, six r's, twenty-one s's, fifteen t's, three u's, two v's, six w's, five x's, four y's and one z.", "steps": 191509, "sec": 2.97}
+{"row": 39, "prefix": "aent", "seed": 4, "sentence": "aent three a's, one b, one c, two d's, twenty-nine e's, six f's, one g, four h's, nine i's, one j, one k, one l, one m, twenty-three n's, sixteen o's, one p, one q, six r's, twenty-one s's, fifteen t's, three u's, two v's, six w's, five x's, four y's and one z.", "steps": 184779, "sec": 3.53}
+{"row": 39, "prefix": "aent", "seed": 5, "sentence": "aent three a's, one b, one c, two d's, twenty-nine e's, six f's, one g, four h's, nine i's, one j, one k, one l, one m, twenty-three n's, sixteen o's, one p, one q, six r's, twenty-one s's, fifteen t's, three u's, two v's, six w's, five x's, four y's and one z.", "steps": 53333, "sec": 0.58}
+{"row": 47, "prefix": "aaaaaaaccdddeeeeeeeeghhhhiiilnnprrsssttttttvw", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.15}
+{"row": 47, "prefix": "aaaaaaaccdddeeeeeeeeghhhhiiilnnprrsssttttttvw", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.03}
+{"row": 47, "prefix": "aaaaaaaccdddeeeeeeeeghhhhiiilnnprrsssttttttvw", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.3}
+{"row": 47, "prefix": "aaaaaaaccdddeeeeeeeeghhhhiiilnnprrsssttttttvw", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.43}
+{"row": 47, "prefix": "aaaaaaaccdddeeeeeeeeghhhhiiilnnprrsssttttttvw", "seed": 4, "sentence": null, "steps": 300000, "sec": 5.25}
+{"row": 47, "prefix": "aaaaaaaccdddeeeeeeeeghhhhiiilnnprrsssttttttvw", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.72}
+{"row": 55, "prefix": "acghnopprx", "seed": 0, "sentence": null, "steps": 300000, "sec": 3.93}
+{"row": 55, "prefix": "acghnopprx", "seed": 1, "sentence": "acghnopprx three a's, one b, two c's, two d's, thirty-three e's, five f's, three g's, ten h's, six i's, one j, one k, one l, one m, eighteen n's, fifteen o's, three p's, one q, ten r's, twenty-two s's, twenty-one t's, two u's, three v's, seven w's, three x's, four y's and one z.", "steps": 118608, "sec": 1.64}
+{"row": 55, "prefix": "acghnopprx", "seed": 2, "sentence": "acghnopprx three a's, one b, two c's, two d's, thirty-three e's, five f's, three g's, ten h's, six i's, one j, one k, one l, one m, eighteen n's, fifteen o's, three p's, one q, ten r's, twenty-two s's, twenty-one t's, two u's, three v's, seven w's, three x's, four y's and one z.", "steps": 144702, "sec": 1.93}
+{"row": 55, "prefix": "acghnopprx", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.63}
+{"row": 55, "prefix": "acghnopprx", "seed": 4, "sentence": "acghnopprx three a's, one b, two c's, two d's, thirty-two e's, five f's, three g's, ten h's, six i's, one j, one k, one l, one m, seventeen n's, fifteen o's, three p's, one q, ten r's, twenty-two s's, twenty-three t's, two u's, three v's, eight w's, three x's, four y's and one z.", "steps": 133610, "sec": 2.22}
+{"row": 55, "prefix": "acghnopprx", "seed": 5, "sentence": "acghnopprx three a's, one b, two c's, two d's, thirty-three e's, five f's, three g's, ten h's, six i's, one j, one k, one l, one m, eighteen n's, fifteen o's, three p's, one q, ten r's, twenty-two s's, twenty-one t's, two u's, three v's, seven w's, three x's, four y's and one z.", "steps": 151494, "sec": 2.05}
+{"row": 63, "prefix": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy", "seed": 0, "sentence": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy three a's, two b's, two c's, five d's, thirty-two e's, eight f's, nine g's, eleven h's, thirteen i's, one j, one k, four l's, one m, twenty n's, fifteen o's, one p, one q, eight r's, twenty-seven s's, twenty-four t's, six u's, four v's, eight w's, four x's, six y's and one z.", "steps": 39886, "sec": 0.53}
+{"row": 63, "prefix": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy", "seed": 1, "sentence": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy three a's, two b's, two c's, five d's, thirty-seven e's, six f's, eight g's, ten h's, eleven i's, one j, one k, four l's, one m, twenty-two n's, fourteen o's, one p, one q, seven r's, twenty-nine s's, twenty-three t's, five u's, seven v's, eight w's, four x's, six y's and one z.", "steps": 90001, "sec": 1.31}
+{"row": 63, "prefix": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy", "seed": 2, "sentence": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy three a's, two b's, two c's, five d's, thirty-seven e's, six f's, eight g's, ten h's, eleven i's, one j, one k, four l's, one m, twenty-two n's, fourteen o's, one p, one q, seven r's, twenty-nine s's, twenty-three t's, five u's, seven v's, eight w's, four x's, six y's and one z.", "steps": 86903, "sec": 1.4}
+{"row": 63, "prefix": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy", "seed": 3, "sentence": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy three a's, two b's, two c's, five d's, thirty-seven e's, six f's, eight g's, ten h's, eleven i's, one j, one k, four l's, one m, twenty-two n's, fourteen o's, one p, one q, seven r's, twenty-nine s's, twenty-three t's, five u's, seven v's, eight w's, four x's, six y's and one z.", "steps": 59675, "sec": 1.19}
+{"row": 63, "prefix": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy", "seed": 4, "sentence": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy three a's, two b's, two c's, five d's, thirty-two e's, eight f's, nine g's, eleven h's, thirteen i's, one j, one k, four l's, one m, twenty n's, fifteen o's, one p, one q, eight r's, twenty-seven s's, twenty-four t's, six u's, four v's, eight w's, four x's, six y's and one z.", "steps": 10912, "sec": 0.15}
+{"row": 63, "prefix": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy", "seed": 5, "sentence": "abcdddeeeeeeggggghhhhiillnnnossstttttuwxy three a's, two b's, two c's, five d's, thirty-seven e's, six f's, eight g's, ten h's, eleven i's, one j, one k, four l's, one m, twenty-two n's, fourteen o's, one p, one q, seven r's, twenty-nine s's, twenty-three t's, five u's, seven v's, eight w's, four x's, six y's and one z.", "steps": 78976, "sec": 0.95}
+{"row": 71, "prefix": "bddeeeeghhhiiooooprsssstttuwy", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.95}
+{"row": 71, "prefix": "bddeeeeghhhiiooooprsssstttuwy", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.46}
+{"row": 71, "prefix": "bddeeeeghhhiiooooprsssstttuwy", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.64}
+{"row": 71, "prefix": "bddeeeeghhhiiooooprsssstttuwy", "seed": 3, "sentence": null, "steps": 300000, "sec": 5.35}
+{"row": 71, "prefix": "bddeeeeghhhiiooooprsssstttuwy", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.54}
+{"row": 71, "prefix": "bddeeeeghhhiiooooprsssstttuwy", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.97}
+{"row": 79, "prefix": "adddeginru", "seed": 0, "sentence": null, "steps": 300000, "sec": 5.03}
+{"row": 79, "prefix": "adddeginru", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.94}
+{"row": 79, "prefix": "adddeginru", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.34}
+{"row": 79, "prefix": "adddeginru", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.72}
+{"row": 79, "prefix": "adddeginru", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.55}
+{"row": 79, "prefix": "adddeginru", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.74}
+{"row": 87, "prefix": "aadeeeeehiiiklnnnoooppssw", "seed": 0, "sentence": null, "steps": 300000, "sec": 5.26}
+{"row": 87, "prefix": "aadeeeeehiiiklnnnoooppssw", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.87}
+{"row": 87, "prefix": "aadeeeeehiiiklnnnoooppssw", "seed": 2, "sentence": "aadeeeeehiiiklnnnoooppssw four a's, one b, one c, three d's, thirty-five e's, five f's, two g's, eight h's, thirteen i's, one j, two k's, two l's, one m, twenty-one n's, sixteen o's, three p's, one q, seven r's, twenty-seven s's, twenty t's, two u's, six v's, nine w's, three x's, five y's and one z.", "steps": 54956, "sec": 0.76}
+{"row": 87, "prefix": "aadeeeeehiiiklnnnoooppssw", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.6}
+{"row": 87, "prefix": "aadeeeeehiiiklnnnoooppssw", "seed": 4, "sentence": null, "steps": 300000, "sec": 3.85}
+{"row": 87, "prefix": "aadeeeeehiiiklnnnoooppssw", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.71}
+{"row": 95, "prefix": "aaaaaccccdddeeeeeffghhhiiiiiikmmnnnnnooooooopprrrssssttx", "seed": 0, "sentence": null, "steps": 300000, "sec": 3.97}
+{"row": 95, "prefix": "aaaaaccccdddeeeeeffghhhiiiiiikmmnnnnnooooooopprrrssssttx", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.8}
+{"row": 95, "prefix": "aaaaaccccdddeeeeeffghhhiiiiiikmmnnnnnooooooopprrrssssttx", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.09}
+{"row": 95, "prefix": "aaaaaccccdddeeeeeffghhhiiiiiikmmnnnnnooooooopprrrssssttx", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.88}
+{"row": 95, "prefix": "aaaaaccccdddeeeeeffghhhiiiiiikmmnnnnnooooooopprrrssssttx", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.96}
+{"row": 95, "prefix": "aaaaaccccdddeeeeeffghhhiiiiiikmmnnnnnooooooopprrrssssttx", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.76}
+{"row": 103, "prefix": "aaddeeeghiiilmnooorrrstw", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.34}
+{"row": 103, "prefix": "aaddeeeghiiilmnooorrrstw", "seed": 1, "sentence": "aaddeeeghiiilmnooorrrstw four a's, one b, one c, four d's, thirty-six e's, seven f's, four g's, eight h's, thirteen i's, one j, one k, three l's, two m's, eighteen n's, sixteen o's, one p, one q, twelve r's, twenty-seven s's, sixteen t's, five u's, seven v's, five w's, four x's, three y's and one z.", "steps": 194375, "sec": 2.73}
+{"row": 103, "prefix": "aaddeeeghiiilmnooorrrstw", "seed": 2, "sentence": "aaddeeeghiiilmnooorrrstw four a's, one b, one c, four d's, thirty-six e's, seven f's, four g's, eight h's, thirteen i's, one j, one k, three l's, two m's, eighteen n's, sixteen o's, one p, one q, twelve r's, twenty-seven s's, sixteen t's, five u's, seven v's, five w's, four x's, three y's and one z.", "steps": 215953, "sec": 3.34}
+{"row": 103, "prefix": "aaddeeeghiiilmnooorrrstw", "seed": 3, "sentence": null, "steps": 300000, "sec": 3.97}
+{"row": 103, "prefix": "aaddeeeghiiilmnooorrrstw", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.75}
+{"row": 103, "prefix": "aaddeeeghiiilmnooorrrstw", "seed": 5, "sentence": null, "steps": 300000, "sec": 5.52}
+{"row": 111, "prefix": "eotw", "seed": 0, "sentence": "eotw two a's, one b, one c, two d's, thirty-two e's, four f's, five g's, eight h's, eight i's, one j, one k, one l, one m, eighteen n's, eighteen o's, one p, one q, six r's, twenty-one s's, seventeen t's, three u's, four v's, seven w's, two x's, three y's and one z.", "steps": 3854, "sec": 0.05}
+{"row": 111, "prefix": "eotw", "seed": 1, "sentence": "eotw two a's, one b, one c, two d's, thirty-two e's, four f's, five g's, eight h's, eight i's, one j, one k, one l, one m, eighteen n's, eighteen o's, one p, one q, six r's, twenty-one s's, seventeen t's, three u's, four v's, seven w's, two x's, three y's and one z.", "steps": 232437, "sec": 4.43}
+{"row": 111, "prefix": "eotw", "seed": 2, "sentence": "eotw two a's, one b, one c, two d's, thirty-two e's, four f's, four g's, seven h's, seven i's, one j, one k, one l, one m, eighteen n's, eighteen o's, one p, one q, six r's, twenty-two s's, seventeen t's, three u's, five v's, eight w's, two x's, three y's and one z.", "steps": 160855, "sec": 2.34}
+{"row": 111, "prefix": "eotw", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.75}
+{"row": 111, "prefix": "eotw", "seed": 4, "sentence": "eotw two a's, one b, one c, two d's, twenty-nine e's, three f's, three g's, six h's, eight i's, one j, one k, one l, one m, twenty n's, sixteen o's, one p, one q, five r's, twenty s's, eighteen t's, two u's, two v's, nine w's, three x's, four y's and one z.", "steps": 42806, "sec": 0.58}
+{"row": 111, "prefix": "eotw", "seed": 5, "sentence": "eotw two a's, one b, one c, two d's, twenty-nine e's, three f's, three g's, six h's, eight i's, one j, one k, one l, one m, twenty n's, sixteen o's, one p, one q, five r's, twenty s's, eighteen t's, two u's, two v's, nine w's, three x's, four y's and one z.", "steps": 22801, "sec": 0.37}
+{"row": 119, "prefix": "aaaaaaaddeehhiiknnoooprrsssttttttuuuuv", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.29}
+{"row": 119, "prefix": "aaaaaaaddeehhiiknnoooprrsssttttttuuuuv", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.53}
+{"row": 119, "prefix": "aaaaaaaddeehhiiknnoooprrsssttttttuuuuv", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.88}
+{"row": 119, "prefix": "aaaaaaaddeehhiiknnoooprrsssttttttuuuuv", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.41}
+{"row": 119, "prefix": "aaaaaaaddeehhiiknnoooprrsssttttttuuuuv", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.88}
+{"row": 119, "prefix": "aaaaaaaddeehhiiknnoooprrsssttttttuuuuv", "seed": 5, "sentence": null, "steps": 300000, "sec": 5.23}
+{"row": 127, "prefix": "adeeeefnoooosttw", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.22}
+{"row": 127, "prefix": "adeeeefnoooosttw", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.96}
+{"row": 127, "prefix": "adeeeefnoooosttw", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.2}
+{"row": 127, "prefix": "adeeeefnoooosttw", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.38}
+{"row": 127, "prefix": "adeeeefnoooosttw", "seed": 4, "sentence": "adeeeefnoooosttw three a's, one b, one c, three d's, thirty-one e's, six f's, two g's, five h's, nine i's, one j, one k, one l, one m, twenty-two n's, twenty-one o's, one p, one q, five r's, twenty s's, eighteen t's, two u's, four v's, nine w's, two x's, five y's and one z.", "steps": 194856, "sec": 3.34}
+{"row": 127, "prefix": "adeeeefnoooosttw", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.16}
+{"row": 135, "prefix": "adeeeeghhhhkklnnnnnooprrsstttttuwy", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.28}
+{"row": 135, "prefix": "adeeeeghhhhkklnnnnnooprrsstttttuwy", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.43}
+{"row": 135, "prefix": "adeeeeghhhhkklnnnnnooprrsstttttuwy", "seed": 2, "sentence": "adeeeeghhhhkklnnnnnooprrsstttttuwy three a's, one b, one c, three d's, forty e's, seven f's, three g's, eleven h's, five i's, one j, three k's, four l's, one m, twenty-two n's, fifteen o's, two p's, one q, eleven r's, twenty-seven s's, twenty-three t's, four u's, seven v's, eight w's, two x's, six y's and one z.", "steps": 27821, "sec": 0.38}
+{"row": 135, "prefix": "adeeeeghhhhkklnnnnnooprrsstttttuwy", "seed": 3, "sentence": "adeeeeghhhhkklnnnnnooprrsstttttuwy three a's, one b, one c, three d's, forty e's, seven f's, three g's, eleven h's, five i's, one j, three k's, four l's, one m, twenty-two n's, fifteen o's, two p's, one q, eleven r's, twenty-seven s's, twenty-three t's, four u's, seven v's, eight w's, two x's, six y's and one z.", "steps": 292235, "sec": 4.27}
+{"row": 135, "prefix": "adeeeeghhhhkklnnnnnooprrsstttttuwy", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.4}
+{"row": 135, "prefix": "adeeeeghhhhkklnnnnnooprrsstttttuwy", "seed": 5, "sentence": "adeeeeghhhhkklnnnnnooprrsstttttuwy three a's, one b, one c, three d's, forty e's, seven f's, three g's, eleven h's, five i's, one j, three k's, four l's, one m, twenty-two n's, fifteen o's, two p's, one q, eleven r's, twenty-seven s's, twenty-three t's, four u's, seven v's, eight w's, two x's, six y's and one z.", "steps": 66650, "sec": 0.93}
+{"row": 143, "prefix": "r", "seed": 0, "sentence": "r two a's, one b, one c, two d's, thirty-one e's, four f's, four g's, eight h's, eight i's, one j, one k, one l, one m, nineteen n's, sixteen o's, one p, one q, eight r's, twenty s's, seventeen t's, three u's, three v's, five w's, two x's, three y's and one z.", "steps": 134371, "sec": 1.88}
+{"row": 143, "prefix": "r", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.43}
+{"row": 143, "prefix": "r", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.37}
+{"row": 143, "prefix": "r", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.43}
+{"row": 143, "prefix": "r", "seed": 4, "sentence": null, "steps": 300000, "sec": 5.53}
+{"row": 143, "prefix": "r", "seed": 5, "sentence": "r two a's, one b, one c, two d's, thirty-one e's, four f's, four g's, eight h's, eight i's, one j, one k, one l, one m, nineteen n's, sixteen o's, one p, one q, eight r's, twenty s's, seventeen t's, three u's, three v's, five w's, two x's, three y's and one z.", "steps": 218562, "sec": 3.31}
+{"row": 151, "prefix": "aaabdeeegghior", "seed": 0, "sentence": "aaabdeeegghior five a's, two b's, one c, three d's, thirty-two e's, eight f's, four g's, six h's, eleven i's, one j, one k, two l's, one m, seventeen n's, sixteen o's, one p, one q, nine r's, twenty-four s's, fourteen t's, five u's, six v's, five w's, four x's, three y's and one z.", "steps": 72330, "sec": 1.02}
+{"row": 151, "prefix": "aaabdeeegghior", "seed": 1, "sentence": "aaabdeeegghior five a's, two b's, one c, three d's, thirty-two e's, eight f's, four g's, six h's, eleven i's, one j, one k, two l's, one m, seventeen n's, sixteen o's, one p, one q, nine r's, twenty-four s's, fourteen t's, five u's, six v's, five w's, four x's, three y's and one z.", "steps": 107871, "sec": 1.64}
+{"row": 151, "prefix": "aaabdeeegghior", "seed": 2, "sentence": null, "steps": 300000, "sec": 5.45}
+{"row": 151, "prefix": "aaabdeeegghior", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.85}
+{"row": 151, "prefix": "aaabdeeegghior", "seed": 4, "sentence": "aaabdeeegghior five a's, two b's, one c, three d's, thirty-two e's, eight f's, four g's, six h's, eleven i's, one j, one k, two l's, one m, seventeen n's, sixteen o's, one p, one q, nine r's, twenty-four s's, fourteen t's, five u's, six v's, five w's, four x's, three y's and one z.", "steps": 129213, "sec": 2.29}
+{"row": 151, "prefix": "aaabdeeegghior", "seed": 5, "sentence": "aaabdeeegghior five a's, two b's, one c, three d's, thirty-two e's, eight f's, four g's, six h's, eleven i's, one j, one k, two l's, one m, seventeen n's, sixteen o's, one p, one q, nine r's, twenty-four s's, fourteen t's, five u's, six v's, five w's, four x's, three y's and one z.", "steps": 210993, "sec": 3.93}
+{"row": 159, "prefix": "aaabceeegllnnoopprssssttt", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.23}
+{"row": 159, "prefix": "aaabceeegllnnoopprssssttt", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.59}
+{"row": 159, "prefix": "aaabceeegllnnoopprssssttt", "seed": 2, "sentence": null, "steps": 300000, "sec": 5.29}
+{"row": 159, "prefix": "aaabceeegllnnoopprssssttt", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.05}
+{"row": 159, "prefix": "aaabceeegllnnoopprssssttt", "seed": 4, "sentence": null, "steps": 300000, "sec": 5.25}
+{"row": 159, "prefix": "aaabceeegllnnoopprssssttt", "seed": 5, "sentence": null, "steps": 300000, "sec": 5.35}
+{"row": 167, "prefix": "aaaaaccccdddeeehhiiilnnnnoooprrrrrssttttuuvwwyyy", "seed": 0, "sentence": null, "steps": 300000, "sec": 5.3}
+{"row": 167, "prefix": "aaaaaccccdddeeehhiiilnnnnoooprrrrrssttttuuvwwyyy", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.89}
+{"row": 167, "prefix": "aaaaaccccdddeeehhiiilnnnnoooprrrrrssttttuuvwwyyy", "seed": 2, "sentence": null, "steps": 300000, "sec": 5.01}
+{"row": 167, "prefix": "aaaaaccccdddeeehhiiilnnnnoooprrrrrssttttuuvwwyyy", "seed": 3, "sentence": null, "steps": 300000, "sec": 5.38}
+{"row": 167, "prefix": "aaaaaccccdddeeehhiiilnnnnoooprrrrrssttttuuvwwyyy", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.33}
+{"row": 167, "prefix": "aaaaaccccdddeeehhiiilnnnnoooprrrrrssttttuuvwwyyy", "seed": 5, "sentence": null, "steps": 300000, "sec": 5.81}
+{"row": 175, "prefix": "hnooost", "seed": 0, "sentence": null, "steps": 300000, "sec": 5.19}
+{"row": 175, "prefix": "hnooost", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.74}
+{"row": 175, "prefix": "hnooost", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.52}
+{"row": 175, "prefix": "hnooost", "seed": 3, "sentence": null, "steps": 300000, "sec": 5.43}
+{"row": 175, "prefix": "hnooost", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.73}
+{"row": 175, "prefix": "hnooost", "seed": 5, "sentence": null, "steps": 300000, "sec": 3.89}
+{"row": 183, "prefix": "accdeeefhhhhhlnoosstt", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.4}
+{"row": 183, "prefix": "accdeeefhhhhhlnoosstt", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.51}
+{"row": 183, "prefix": "accdeeefhhhhhlnoosstt", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.33}
+{"row": 183, "prefix": "accdeeefhhhhhlnoosstt", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.6}
+{"row": 183, "prefix": "accdeeefhhhhhlnoosstt", "seed": 4, "sentence": null, "steps": 300000, "sec": 5.02}
+{"row": 183, "prefix": "accdeeefhhhhhlnoosstt", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.6}
+{"row": 191, "prefix": "acceeeehhhiiillnnooooopstttttuwy", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.53}
+{"row": 191, "prefix": "acceeeehhhiiillnnooooopstttttuwy", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.25}
+{"row": 191, "prefix": "acceeeehhhiiillnnooooopstttttuwy", "seed": 2, "sentence": null, "steps": 300000, "sec": 5.29}
+{"row": 191, "prefix": "acceeeehhhiiillnnooooopstttttuwy", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.78}
+{"row": 191, "prefix": "acceeeehhhiiillnnooooopstttttuwy", "seed": 4, "sentence": null, "steps": 300000, "sec": 5.53}
+{"row": 191, "prefix": "acceeeehhhiiillnnooooopstttttuwy", "seed": 5, "sentence": "acceeeehhhiiillnnooooopstttttuwy three a's, one b, three c's, two d's, thirty-nine e's, five f's, one g, ten h's, eleven i's, one j, one k, four l's, one m, twenty-three n's, seventeen o's, two p's, one q, nine r's, twenty-five s's, twenty-three t's, four u's, six v's, seven w's, three x's, six y's and one z.", "steps": 7872, "sec": 0.18}
+{"row": 199, "prefix": "accdeeeehhirstuw", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.9}
+{"row": 199, "prefix": "accdeeeehhirstuw", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.25}
+{"row": 199, "prefix": "accdeeeehhirstuw", "seed": 2, "sentence": null, "steps": 300000, "sec": 5.3}
+{"row": 199, "prefix": "accdeeeehhirstuw", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.36}
+{"row": 199, "prefix": "accdeeeehhirstuw", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.64}
+{"row": 199, "prefix": "accdeeeehhirstuw", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.9}
+{"row": 207, "prefix": "aabcceiilnnnoooopssstt", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.33}
+{"row": 207, "prefix": "aabcceiilnnnoooopssstt", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.51}
+{"row": 207, "prefix": "aabcceiilnnnoooopssstt", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.97}
+{"row": 207, "prefix": "aabcceiilnnnoooopssstt", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.79}
+{"row": 207, "prefix": "aabcceiilnnnoooopssstt", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.8}
+{"row": 207, "prefix": "aabcceiilnnnoooopssstt", "seed": 5, "sentence": null, "steps": 300000, "sec": 5.18}
+{"row": 215, "prefix": "aaceeefgghhhiilllnopqrstttvy", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.29}
+{"row": 215, "prefix": "aaceeefgghhhiilllnopqrstttvy", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.53}
+{"row": 215, "prefix": "aaceeefgghhhiilllnopqrstttvy", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.72}
+{"row": 215, "prefix": "aaceeefgghhhiilllnopqrstttvy", "seed": 3, "sentence": null, "steps": 300000, "sec": 5.07}
+{"row": 215, "prefix": "aaceeefgghhhiilllnopqrstttvy", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.2}
+{"row": 215, "prefix": "aaceeefgghhhiilllnopqrstttvy", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.79}
+{"row": 223, "prefix": "aaaaccdeeeeeefghillmmnnnnrsttttuuuvy", "seed": 0, "sentence": null, "steps": 300000, "sec": 5.95}
+{"row": 223, "prefix": "aaaaccdeeeeeefghillmmnnnnrsttttuuuvy", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.86}
+{"row": 223, "prefix": "aaaaccdeeeeeefghillmmnnnnrsttttuuuvy", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.55}
+{"row": 223, "prefix": "aaaaccdeeeeeefghillmmnnnnrsttttuuuvy", "seed": 3, "sentence": null, "steps": 300000, "sec": 5.48}
+{"row": 223, "prefix": "aaaaccdeeeeeefghillmmnnnnrsttttuuuvy", "seed": 4, "sentence": null, "steps": 300000, "sec": 5.96}
+{"row": 223, "prefix": "aaaaccdeeeeeefghillmmnnnnrsttttuuuvy", "seed": 5, "sentence": "aaaaccdeeeeeefghillmmnnnnrsttttuuuvy six a's, one b, three c's, three d's, thirty-two e's, eight f's, four g's, eight h's, ten i's, one j, one k, four l's, three m's, twenty n's, fourteen o's, one p, one q, eleven r's, twenty-five s's, twenty-two t's, nine u's, four v's, six w's, four x's, six y's and one z.", "steps": 666, "sec": 0.02}
+{"row": 231, "prefix": "aabbcddddeeeehhhhhiiiiiiorsttttttvwwwy", "seed": 0, "sentence": "aabbcddddeeeehhhhhiiiiiiorsttttttvwwwy four a's, three b's, two c's, six d's, thirty-four e's, five f's, one g, eleven h's, seventeen i's, one j, one k, two l's, one m, twenty n's, thirteen o's, one p, one q, nine r's, twenty-six s's, twenty-three t's, three u's, six v's, nine w's, five x's, six y's and one z.", "steps": 247674, "sec": 4.41}
+{"row": 231, "prefix": "aabbcddddeeeehhhhhiiiiiiorsttttttvwwwy", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.11}
+{"row": 231, "prefix": "aabbcddddeeeehhhhhiiiiiiorsttttttvwwwy", "seed": 2, "sentence": "aabbcddddeeeehhhhhiiiiiiorsttttttvwwwy four a's, three b's, two c's, six d's, thirty-four e's, five f's, one g, eleven h's, seventeen i's, one j, one k, two l's, one m, twenty n's, thirteen o's, one p, one q, nine r's, twenty-six s's, twenty-three t's, three u's, six v's, nine w's, five x's, six y's and one z.", "steps": 223255, "sec": 2.99}
+{"row": 231, "prefix": "aabbcddddeeeehhhhhiiiiiiorsttttttvwwwy", "seed": 3, "sentence": null, "steps": 300000, "sec": 5.07}
+{"row": 231, "prefix": "aabbcddddeeeehhhhhiiiiiiorsttttttvwwwy", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.78}
+{"row": 231, "prefix": "aabbcddddeeeehhhhhiiiiiiorsttttttvwwwy", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.29}
+{"row": 239, "prefix": "aaaaaacdeeeeeggggghhiiiiiillooopprsssstuvy", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.16}
+{"row": 239, "prefix": "aaaaaacdeeeeeggggghhiiiiiillooopprsssstuvy", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.58}
+{"row": 239, "prefix": "aaaaaacdeeeeeggggghhiiiiiillooopprsssstuvy", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.86}
+{"row": 239, "prefix": "aaaaaacdeeeeeggggghhiiiiiillooopprsssstuvy", "seed": 3, "sentence": null, "steps": 300000, "sec": 4.67}
+{"row": 239, "prefix": "aaaaaacdeeeeeggggghhiiiiiillooopprsssstuvy", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.91}
+{"row": 239, "prefix": "aaaaaacdeeeeeggggghhiiiiiillooopprsssstuvy", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.91}
+{"row": 247, "prefix": "ensw", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.8}
+{"row": 247, "prefix": "ensw", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.09}
+{"row": 247, "prefix": "ensw", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.93}
+{"row": 247, "prefix": "ensw", "seed": 3, "sentence": null, "steps": 300000, "sec": 5.26}
+{"row": 247, "prefix": "ensw", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.44}
+{"row": 247, "prefix": "ensw", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.82}
+{"row": 255, "prefix": "aaaabbceeeeeehhiiiijlmnnoooorrssssttttttuu", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.69}
+{"row": 255, "prefix": "aaaabbceeeeeehhiiiijlmnnoooorrssssttttttuu", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.38}
+{"row": 255, "prefix": "aaaabbceeeeeehhiiiijlmnnoooorrssssttttttuu", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.51}
+{"row": 255, "prefix": "aaaabbceeeeeehhiiiijlmnnoooorrssssttttttuu", "seed": 3, "sentence": null, "steps": 300000, "sec": 6.42}
+{"row": 255, "prefix": "aaaabbceeeeeehhiiiijlmnnoooorrssssttttttuu", "seed": 4, "sentence": null, "steps": 300000, "sec": 5.13}
+{"row": 255, "prefix": "aaaabbceeeeeehhiiiijlmnnoooorrssssttttttuu", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.81}
+{"row": 263, "prefix": "aaabccdddeeeeeggghhhhiijlnnnoooooorrrrsstuuw", "seed": 0, "sentence": null, "steps": 300000, "sec": 5.02}
+{"row": 263, "prefix": "aaabccdddeeeeeggghhhhiijlnnnoooooorrrrsstuuw", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.93}
+{"row": 263, "prefix": "aaabccdddeeeeeggghhhhiijlnnnoooooorrrrsstuuw", "seed": 2, "sentence": null, "steps": 300000, "sec": 4.81}
+{"row": 263, "prefix": "aaabccdddeeeeeggghhhhiijlnnnoooooorrrrsstuuw", "seed": 3, "sentence": null, "steps": 300000, "sec": 5.64}
+{"row": 263, "prefix": "aaabccdddeeeeeggghhhhiijlnnnoooooorrrrsstuuw", "seed": 4, "sentence": null, "steps": 300000, "sec": 5.27}
+{"row": 263, "prefix": "aaabccdddeeeeeggghhhhiijlnnnoooooorrrrsstuuw", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.47}
+{"row": 271, "prefix": "aaaddeeffhhiiklooorsstttwwy", "seed": 0, "sentence": "aaaddeeffhhiiklooorsstttwwy five a's, one b, one c, four d's, thirty-five e's, seven f's, two g's, seven h's, twelve i's, one j, two k's, three l's, one m, twenty-one n's, sixteen o's, one p, one q, six r's, twenty-seven s's, nineteen t's, two u's, eight v's, nine w's, three x's, five y's and one z.", "steps": 201393, "sec": 3.13}
+{"row": 271, "prefix": "aaaddeeffhhiiklooorsstttwwy", "seed": 1, "sentence": "aaaddeeffhhiiklooorsstttwwy five a's, one b, one c, four d's, thirty-eight e's, seven f's, four g's, nine h's, eleven i's, one j, two k's, three l's, one m, twenty-one n's, sixteen o's, one p, one q, seven r's, twenty-seven s's, eighteen t's, three u's, eight v's, seven w's, two x's, five y's and one z.", "steps": 140602, "sec": 2.2}
+{"row": 271, "prefix": "aaaddeeffhhiiklooorsstttwwy", "seed": 2, "sentence": "aaaddeeffhhiiklooorsstttwwy five a's, one b, one c, four d's, thirty-five e's, seven f's, two g's, seven h's, twelve i's, one j, two k's, three l's, one m, twenty-one n's, sixteen o's, one p, one q, six r's, twenty-seven s's, nineteen t's, two u's, eight v's, nine w's, three x's, five y's and one z.", "steps": 39758, "sec": 0.57}
+{"row": 271, "prefix": "aaaddeeffhhiiklooorsstttwwy", "seed": 3, "sentence": "aaaddeeffhhiiklooorsstttwwy five a's, one b, one c, four d's, thirty-five e's, seven f's, two g's, seven h's, twelve i's, one j, two k's, three l's, one m, twenty-one n's, sixteen o's, one p, one q, six r's, twenty-seven s's, nineteen t's, two u's, eight v's, nine w's, three x's, five y's and one z.", "steps": 33766, "sec": 0.51}
+{"row": 271, "prefix": "aaaddeeffhhiiklooorsstttwwy", "seed": 4, "sentence": "aaaddeeffhhiiklooorsstttwwy five a's, one b, one c, four d's, thirty-eight e's, seven f's, four g's, nine h's, eleven i's, one j, two k's, three l's, one m, twenty-one n's, sixteen o's, one p, one q, seven r's, twenty-seven s's, eighteen t's, three u's, eight v's, seven w's, two x's, five y's and one z.", "steps": 12886, "sec": 0.17}
+{"row": 271, "prefix": "aaaddeeffhhiiklooorsstttwwy", "seed": 5, "sentence": "aaaddeeffhhiiklooorsstttwwy five a's, one b, one c, four d's, thirty-five e's, seven f's, two g's, seven h's, twelve i's, one j, two k's, three l's, one m, twenty-one n's, sixteen o's, one p, one q, six r's, twenty-seven s's, nineteen t's, two u's, eight v's, nine w's, three x's, five y's and one z.", "steps": 74930, "sec": 1.6}
+{"row": 279, "prefix": "aaacccdeeeeeeeeeeffghhimmmmnnnoooopprrrrsssttttttuvwwy", "seed": 0, "sentence": null, "steps": 300000, "sec": 4.74}
+{"row": 279, "prefix": "aaacccdeeeeeeeeeeffghhimmmmnnnoooopprrrrsssttttttuvwwy", "seed": 1, "sentence": null, "steps": 300000, "sec": 5.13}
+{"row": 279, "prefix": "aaacccdeeeeeeeeeeffghhimmmmnnnoooopprrrrsssttttttuvwwy", "seed": 2, "sentence": null, "steps": 300000, "sec": 5.27}
+{"row": 279, "prefix": "aaacccdeeeeeeeeeeffghhimmmmnnnoooopprrrrsssttttttuvwwy", "seed": 3, "sentence": null, "steps": 300000, "sec": 5.05}
+{"row": 279, "prefix": "aaacccdeeeeeeeeeeffghhimmmmnnnoooopprrrrsssttttttuvwwy", "seed": 4, "sentence": null, "steps": 300000, "sec": 4.92}
+{"row": 279, "prefix": "aaacccdeeeeeeeeeeffghhimmmmnnnoooopprrrrsssttttttuvwwy", "seed": 5, "sentence": null, "steps": 300000, "sec": 4.07}
+{"row": 287, "prefix": "abeeeeeeiiklnnooprsttu", "seed": 0, "sentence": null, "steps": 300000, "sec": 3.98}
+{"row": 287, "prefix": "abeeeeeeiiklnnooprsttu", "seed": 1, "sentence": null, "steps": 300000, "sec": 4.0}
+{"row": 287, "prefix": "abeeeeeeiiklnnooprsttu", "seed": 2, "sentence": null, "steps": 300000, "sec": 3.97}
+{"row": 287, "prefix": "abeeeeeeiiklnnooprsttu", "seed": 3, "sentence": "abeeeeeeiiklnnooprsttu three a's, two b's, one c, two d's, thirty-eight e's, five f's, five g's, eight h's, eleven i's, one j, two k's, three l's, one m, eighteen n's, sixteen o's, two p's, one q, seven r's, twenty-seven s's, twenty-one t's, four u's, seven v's, eight w's, two x's, four y's and one z.", "steps": 68405, "sec": 0.91}
+{"row": 287, "prefix": "abeeeeeeiiklnnooprsttu", "seed": 4, "sentence": null, "steps": 300000, "sec": 3.6}
+{"row": 287, "prefix": "abeeeeeeiiklnnooprsttu", "seed": 5, "sentence": null, "steps": 300000, "sec": 3.37}
+{"row": 295, "prefix": "aaccddeeeeegghiiiilmmnnoooooppprrrsssssttttuuww", "seed": 0, "sentence": "aaccddeeeeegghiiiilmmnnoooooppprrrsssssttttuuww four a's, one b, three c's, four d's, forty-one e's, eight f's, five g's, eight h's, twelve i's, one j, one k, three l's, three m's, twenty-four n's, nineteen o's, four p's, one q, thirteen r's, twenty-nine s's, twenty-one t's, seven u's, seven v's, seven w's, one x, five y's and one z.", "steps": 270818, "sec": 3.1}
+{"row": 295, "prefix": "aaccddeeeeegghiiiilmmnnoooooppprrrsssssttttuuww", "seed": 1, "sentence": null, "steps": 300000, "sec": 3.14}
+{"row": 295, "prefix": "aaccddeeeeegghiiiilmmnnoooooppprrrsssssttttuuww", "seed": 2, "sentence": null, "steps": 300000, "sec": 3.23}
+{"row": 295, "prefix": "aaccddeeeeegghiiiilmmnnoooooppprrrsssssttttuuww", "seed": 3, "sentence": null, "steps": 300000, "sec": 3.27}
+{"row": 295, "prefix": "aaccddeeeeegghiiiilmmnnoooooppprrrsssssttttuuww", "seed": 4, "sentence": "aaccddeeeeegghiiiilmmnnoooooppprrrsssssttttuuww four a's, one b, three c's, four d's, forty-one e's, eight f's, five g's, eight h's, twelve i's, one j, one k, three l's, three m's, twenty-four n's, nineteen o's, four p's, one q, thirteen r's, twenty-nine s's, twenty-one t's, seven u's, seven v's, seven w's, one x, five y's and one z.", "steps": 263063, "sec": 2.68}
+{"row": 295, "prefix": "aaccddeeeeegghiiiilmmnnoooooppprrrsssssttttuuww", "seed": 5, "sentence": null, "steps": 300000, "sec": 3.14}

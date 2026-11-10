@@ -1,0 +1,7 @@
+checker     leaves  496452  distinct products  492126
+session-2   leaves  497165  distinct products  492839
+session-3   leaves  497231  distinct products  492905
+session-1b  leaves  497608  distinct products  493279
+checker minus session-2: 2   |   session-2 minus checker: 715
+session-2 minus session-3: 0   |   session-3 minus session-2: 66
+session-3 minus session-1b: 0   |   session-1b minus session-3: 374

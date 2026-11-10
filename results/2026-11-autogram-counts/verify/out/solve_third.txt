@@ -1,0 +1,2 @@
+## 'Left on a shelf by a third visitor, this sentence contains exactly': 1 autogram(s)   [12073 nodes, 1.7s]
+Left on a shelf by a third visitor, this sentence contains exactly six a's, two b's, four c's, three d's, thirty-five e's, ten f's, one g, nine h's, sixteen i's, one j, one k, five l's, one m, twenty-three n's, fifteen o's, one p, one q, eleven r's, thirty s's, twenty-three t's, four u's, six v's, four w's, six x's, seven y's and one z.

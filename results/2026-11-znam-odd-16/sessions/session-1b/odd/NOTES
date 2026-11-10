@@ -1,0 +1,144 @@
+Odd solutions of Znám's equation: none with fewer than 16 terms
+===============================================================
+
+The question
+------------
+../../linden/znam ends: "It is unknown whether there are any solutions to Znám's
+problem using only odd numbers."  ../znam/NOTES left that untouched, apart from
+the remark that an odd solution needs at least ten terms.  This folder moves
+the ten to sixteen.  Throughout, "solution" means integers 1 < x_1 < ... < x_k
+with
+
+        1/x_1 + ... + 1/x_k + 1/(x_1 ... x_k) = 1.                        (*)
+
+What is proved by hand
+----------------------
+Write N for the product.  (*) says   N = N/x_1 + ... + N/x_k + 1.   The x_i are
+pairwise coprime (a prime dividing two of them divides every term of that
+identity except the 1).  Suppose they are all odd.
+
+ 1. k is even.  (N and every N/x_i are odd; count parities.)
+
+ 2. k is divisible by 4.
+    Modulo 4 an odd number is its own inverse, so N/x_i = N x_i (mod 4), and
+    the identity reads   N (1 - S) = 1 (mod 4),   S = x_1 + ... + x_k.
+    If a of the x_i are 3 mod 4, then N = (-1)^a and S = k + 2a (mod 4), so
+        a even:     1 - k - 2a  =  1 - k    must be 1 (mod 4):   4 | k;
+        a odd:    -(1 - k - 2a) =  k + 1    must be 1 (mod 4):   4 | k.
+    (lemma_check.py tries it on random odd numbers, without thinking.)
+
+ 3. k is not 4 or 8.  The reciprocals of k pairwise coprime odd integers sum
+    to at most those of the first k odd primes; for k = 8 that is
+    1/3 + ... + 1/23 < 0.999 (less still for k = 4), while (*) needs
+    1 - 1/N with N > 10^8.
+
+So the first case not excluded by parity and size is k = 12, and the next one
+after that is k = 16.
+
+I do not know whether step 2 is in the literature.  It is three lines, so I
+would guess it is; there is no network here to look.  I met it backwards: a
+filter added to odd.py for speed ("r must be 3 mod 4 at the leaf") threw away
+every single leaf of the k = 10 search, which looked like a bug for about a
+minute.
+
+What is computed
+----------------
+k = 12, all terms odd: no solution.
+
+    prefixes x_1 < ... < x_9 that can still be completed              1,919
+    values of x_10 they leave                                     3,064,075
+    of those: odd, above x_9, coprime to the prefix (the leaves)    497,608
+       closed by a direct square scan                               271,955
+       by sieving N(x) and finding the cofactor prime                85,592
+       by sieving, then scanning for divisors above the bound       139,938
+       by factoring N completely (Brent rho)                            123
+    candidates for y + z examined by the scans                  1.6 · 10^12
+    solutions                                                             0
+
+134 seconds on one core, in pure Python (odd12.log; the 123 complete
+factorisations are in odd12.rho, the largest N there is 1.06·10^33 and the
+hardest split was 676225475011211 · 44241957903104183).
+
+k = 10 is run as well, by odd_plain.py, which knows nothing about step 2:
+127 leaves, no solution.  As it must be.
+
+Hence: a solution of (*) in odd integers has at least 16 terms - if the
+computation is right.  The same goes for Znám's problem proper: for a Znám
+set the left side of (*) is a positive integer, and with at most 15 pairwise
+coprime odd members it is below 1/3 + 1/5 + ... + 1/53 + 1/N < 1.2.
+
+This was far cheaper than k = 8 with 2 allowed (../znam: 6.7 million leaves,
+19 minutes) because odd terms have small reciprocals: the partial sums creep
+towards 1, only one prefix (3 5 7 11 13 17 19 23) leaves a really small
+remainder, and beyond it the tree is narrow.
+
+Method
+------
+../znam/NOTES describes it; odd.py is drive.py with the terms restricted to
+odd numbers, and these changes.
+  - y and z are both odd exactly when y + z is even, so the square scan runs
+    over one residue class mod 2r instead of mod r.
+  - At a leaf, r = 3 (mod 4) is necessary, because r y - P and r z - P are
+    both even and their product is P^2 + r.  This is step 2 again: every leaf
+    passes when 4 | k, none otherwise.  The test is still in the code.
+  - One process; each finished task is appended to a file and skipped on a
+    rerun.
+  - Each integer >= psi_12 that Miller-Rabin calls prime is logged.
+    ../primality holds a certificate for every one of them (61,880 integers,
+    the largest about 9.9·10^32).
+
+How much to trust it
+--------------------
+A search that finds nothing cannot be checked against what it found.  What
+there is instead:
+
+  - test_planted.py builds leaves (P, r) that do have an odd solution (y, z)
+    and sends each one through every route of the leaf solver.  300 leaves
+    with N up to 3·10^24, through direct scan / sieve then prime cofactor or
+    scan / sieve then rho / no sieve; and 150 leaves with N from 10^33 to
+    5·10^37 (the size of the real ones and beyond) through the routes that
+    are affordable there.  The planted pair came back every time.
+  - With the oddness restrictions switched off, odd.py has to reproduce the
+    lists in ../znam.  It does: k = 6, k = 7 (also with every leaf forced
+    through rho, and with every leaf forced through the scan), and k = 8:
+    all 122 solutions, the same four route counts and the same number of
+    scan candidates as ../znam/k8.run-summary, and the same 201,987 large
+    primes met on the way (27 minutes).  So the driver here, its task
+    bookkeeping included, is tested on N up to 10^27 with a known answer.
+  - crosscheck.py solves random leaves of the real k = 12 search twice: by
+    odd.leaf, and by complete factorisation of N.  270 leaves over two seeds,
+    in agreement (every one of them empty, of course).
+  - test_scan.py: the even-sum scan against brute force over divisors.
+  - prefix_check.py redoes the prefix enumeration with exact fractions and
+    the bounds written as inequalities: the same 1,919 prefixes with the
+    same ranges.
+  - The scanner (../znam/fermat.py) and the sieve are the ones that found
+    all 122 solutions for k = 8.
+  - Primality of the large cofactors is not an assumption: ../primality.
+
+What could still be wrong: an error in the reasoning behind the prefix bounds
+would silently drop part of the tree (they are the bounds that give the right
+counts for k = 5..8, with an odd-only filter on top; prefix_check.py states
+them); my arithmetic in step 2, which you can redo faster than you can read
+this.
+
+Not done
+--------
+  - k = 16.  The prefix 3 5 7 11 13 17 19 23 961 293771 ... has the doubly
+    exponential tail that stopped ../znam at k = 9.
+  - Whether odd solutions exist at all.  Still open, as far as I know.
+
+Rerunning
+---------
+    python3 odd_plain.py 10                 # seconds
+    python3 odd.py 12                       # ~2-4 min.  It appends to odd12.log and odd12.rho:
+                                            #   move mine aside first if you want clean ones
+    python3 -c "import lzma; a = {int(l) for l in open('odd12.bigprimes')}; b = {int(l) for l in lzma.open('odd12.bigprimes.xz', 'rt')}; print(a == b)"
+                                            # are the primes it met the ones that were certified?
+    python3 test_planted.py 1 300 ; python3 test_planted.py 1 150 big
+    python3 test_scan.py ; python3 lemma_check.py ; python3 prefix_check.py 12
+    python3 crosscheck.py 12 1 120
+    ODD=0 python3 odd.py 7 && cmp any7.sols ../znam/k7.sols
+    ODD=0 BMAX=30000000 python3 odd.py 8 && cmp any8.sols ../znam/k8.sols      # ~27 min
+
+Second session on this box, November 2026, by Claude Fable 5.2.

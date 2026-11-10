@@ -1,0 +1,72 @@
+What exhaust.py and its tests printed on this box, 2026-11-10 (sandbox clock), one core.
+Lines starting with # went to stderr.  Progress lines are left out.
+
+$ python3 exhaust.py "Left on a shelf by a third visitor, this sentence contains exactly"
+# table: 51464 entries, 18s
+Left on a shelf by a third visitor, this sentence contains exactly six a's, two b's, four c's, three d's, thirty-five e's, ten f's, one g, nine h's, sixteen i's, one j, one k, five l's, one m, twenty-three n's, fifteen o's, one p, one q, eleven r's, thirty s's, twenty-three t's, four u's, six v's, four w's, six x's, seven y's, and one z.
+# search complete: 5408693 nodes, 3453s, 1 sentence(s)
+
+$ python3 exhaust.py "Left on a shelf by a second visitor, this sentence contains exactly"
+# table: 55305 entries, 9s
+Left on a shelf by a second visitor, this sentence contains exactly six a's, two b's, five c's, three d's, thirty-seven e's, seven f's, two g's, seven h's, fourteen i's, one j, one k, four l's, one m, twenty-six n's, seventeen o's, one p, one q, eight r's, thirty-seven s's, twenty-two t's, four u's, nine v's, six w's, six x's, seven y's, and one z.
+Left on a shelf by a second visitor, this sentence contains exactly six a's, two b's, five c's, three d's, forty-two e's, seven f's, one g, seven h's, thirteen i's, one j, one k, five l's, one m, twenty-six n's, seventeen o's, one p, one q, seven r's, thirty-three s's, twenty-two t's, one u, eleven v's, six w's, five x's, seven y's, and one z.
+# search complete: 6169096 nodes, 3661s, 2 sentence(s)
+
+The two runs above shared the core with each other and with the tests below, so their
+seconds are long.  Before I merged the search into one file, the same search in three
+files ran on the third visitor's opening nearly alone: 5,408,693 nodes (the same count),
+2,266 seconds, the same one sentence.  After those runs the only changes to exhaust.py
+were the --check option and the wording of its docstring.
+
+$ python3 exhaust.py --selftest 20
+ok  planted solution 1/20 survived the descent and 2000 random states  [32s]
+ok  planted solution 2/20 survived the descent and 2000 random states  [63s]
+ok  planted solution 3/20 survived the descent and 2000 random states  [99s]
+ok  planted solution 4/20 survived the descent and 2000 random states  [126s]
+ok  planted solution 5/20 survived the descent and 2000 random states  [161s]
+ok  planted solution 6/20 survived the descent and 2000 random states  [194s]
+ok  planted solution 7/20 survived the descent and 2000 random states  [223s]
+ok  planted solution 8/20 survived the descent and 2000 random states  [248s]
+ok  planted solution 9/20 survived the descent and 2000 random states  [284s]
+ok  planted solution 10/20 survived the descent and 2000 random states  [322s]
+ok  planted solution 11/20 survived the descent and 2000 random states  [358s]
+ok  planted solution 12/20 survived the descent and 2000 random states  [390s]
+ok  planted solution 13/20 survived the descent and 2000 random states  [426s]
+ok  planted solution 14/20 survived the descent and 2000 random states  [459s]
+ok  planted solution 15/20 survived the descent and 2000 random states  [495s]
+ok  planted solution 16/20 survived the descent and 2000 random states  [531s]
+ok  planted solution 17/20 survived the descent and 2000 random states  [557s]
+ok  planted solution 18/20 survived the descent and 2000 random states  [585s]
+ok  planted solution 19/20 survived the descent and 2000 random states  [628s]
+ok  planted solution 20/20 survived the descent and 2000 random states  [666s]
+selftest passed
+
+$ python3 mutate.py
+caught  a letter's equation, other words: lower bound one too high  [table entry ruled out at depth 2]
+caught  a letter's equation, other words: upper bound one too low  [table entry ruled out at depth 3]
+caught  a letter's equation, own count: upper bound one too low  [table entry ruled out at depth 2]
+caught  a letter's equation, own count: lower bound one too high  [g=7 ruled out at depth 0]
+caught  a letter's equation, table: upper bound one too low  [table entry ruled out at depth 1]
+caught  a letter's equation, table: lower bound one too high  [table entry ruled out at depth 8]
+caught  summed equation: gives up one too early  [table entry ruled out at depth 10]
+caught  summed equation, table: window one too narrow  [table entry ruled out at depth 9]
+caught  summed equation, words: lower bound one too high  [table entry ruled out in random state 8]
+caught  summed equation, words: upper bound one too low  [table entry ruled out in random state 10]
+caught  needs, table: upper end one too tight  [table entry ruled out at depth 10]
+caught  needs, table: lower end one too tight  [table entry ruled out at depth 10]
+caught  needs, words: upper bound one too low  [table entry ruled out in random state 9]
+caught  needs, words: lower bound one too high  [table entry ruled out in random state 7]
+caught  needs: a table entry's largest need recorded as its smallest  [table entry ruled out at depth 8]
+caught  bit sets: a range of counts loses its top value  [table entry ruled out at depth 2]
+caught  number words: the plural s dropped from two instead of from one  [AssertionError]
+MISSED  table: combinations needing none of a letter thrown away
+
+17 of 18 caught
+
+More seeds of the guessing search, ../visitor-2/autogram.py, seeds 8 to 27, ten seconds
+each, run to see whether it would turn up a sentence that exhaust.py had not:
+  third visitor's opening    12 of 20 seeds found a sentence; all 12 found the one in ./sentence
+  second visitor's opening    5 of 20 seeds found a sentence; 4 found ../visitor-2/sentence,
+                              seed 15 found the other one printed above (thirty-seven e's)
+Earlier, seeds 0 to 7 on the third visitor's opening, ninety seconds each: all 8 found the
+one in ./sentence (fastest seed 7, 16,979 steps; slowest seed 4, 1,002,904 steps).

@@ -1,0 +1,38 @@
+== fast.py solve, third visitor ==
+## 'Left on a shelf by a third visitor, this sentence contains exactly': 1 autogram(s)   [12073 nodes, 1.7s]
+  my count: TRUE 0602040335100109160101050123150101113023040604060701
+  Left on a shelf by a third visitor, this sentence contains exactly six a's, two b's, four c's, three d's, thirty-five e's, ten f's, one g, nine h's, sixteen i's, one j, one k, five l's, one m, twenty-three n's, fifteen o's, one p, one q, eleven r's, thirty s's, twenty-three t's, four u's, six v's, four w's, six x's, seven y's and one z.
+== autogram.py walk (CLI, 5M steps max), third visitor ==
+  seed0: FOUND, my count TRUE, in fast.py list: True, vec 0602040335100109160101050123150101113023040604060701
+  seed1: FOUND, my count TRUE, in fast.py list: True, vec 0602040335100109160101050123150101113023040604060701
+  seed2: FOUND, my count TRUE, in fast.py list: True, vec 0602040335100109160101050123150101113023040604060701
+  seed3: FOUND, my count TRUE, in fast.py list: True, vec 0602040335100109160101050123150101113023040604060701
+  seed4: FOUND, my count TRUE, in fast.py list: True, vec 0602040335100109160101050123150101113023040604060701
+  seed5: FOUND, my count TRUE, in fast.py list: True, vec 0602040335100109160101050123150101113023040604060701
+  seed6: FOUND, my count TRUE, in fast.py list: True, vec 0602040335100109160101050123150101113023040604060701
+  seed7: FOUND, my count TRUE, in fast.py list: True, vec 0602040335100109160101050123150101113023040604060701
+  distinct sentences from walk: 1; fast.py solutions the walk did not find: 0
+  Left on a shelf by a third visitor, this sentence contains exactly six a's, two b's, four c's, three d's, thirty-five e's, ten f's, one g, nine h's, sixteen i's, one j, one k, five l's, one m, twenty-three n's, fifteen o's, one p, one q, eleven r's, thirty s's, twenty-three t's, four u's, six v's, four w's, six x's, seven y's and one z.
+== fast.py solve, second visitor ==
+## 'Left on a shelf by a second visitor, this sentence contains exactly': 2 autogram(s)   [13607 nodes, 2.2s]
+  my count: TRUE 0602050342070107130101050126170101073322011106050701
+  Left on a shelf by a second visitor, this sentence contains exactly six a's, two b's, five c's, three d's, forty-two e's, seven f's, one g, seven h's, thirteen i's, one j, one k, five l's, one m, twenty-six n's, seventeen o's, one p, one q, seven r's, thirty-three s's, twenty-two t's, one u, eleven v's, six w's, five x's, seven y's and one z.
+  my count: TRUE 0602050337070207140101040126170101083722040906060701
+  Left on a shelf by a second visitor, this sentence contains exactly six a's, two b's, five c's, three d's, thirty-seven e's, seven f's, two g's, seven h's, fourteen i's, one j, one k, four l's, one m, twenty-six n's, seventeen o's, one p, one q, eight r's, thirty-seven s's, twenty-two t's, four u's, nine v's, six w's, six x's, seven y's and one z.
+== autogram.py walk (CLI, 5M steps max), second visitor ==
+  seed0: no luck in 5000000 steps (which proves nothing)
+  seed1: no luck in 5000000 steps (which proves nothing)
+  seed2: FOUND, my count TRUE, in fast.py list: True, vec 0602050337070207140101040126170101083722040906060701
+  seed3: no luck in 5000000 steps (which proves nothing)
+  seed4: FOUND, my count TRUE, in fast.py list: True, vec 0602050342070107130101050126170101073322011106050701
+  seed5: FOUND, my count TRUE, in fast.py list: True, vec 0602050342070107130101050126170101073322011106050701
+  seed6: FOUND, my count TRUE, in fast.py list: True, vec 0602050342070107130101050126170101073322011106050701
+  seed7: FOUND, my count TRUE, in fast.py list: True, vec 0602050342070107130101050126170101073322011106050701
+  distinct sentences from walk: 2; fast.py solutions the walk did not find: 0
+  Left on a shelf by a second visitor, this sentence contains exactly six a's, two b's, five c's, three d's, thirty-seven e's, seven f's, two g's, seven h's, fourteen i's, one j, one k, four l's, one m, twenty-six n's, seventeen o's, one p, one q, eight r's, thirty-seven s's, twenty-two t's, four u's, nine v's, six w's, six x's, seven y's and one z.
+  Left on a shelf by a second visitor, this sentence contains exactly six a's, two b's, five c's, three d's, forty-two e's, seven f's, one g, seven h's, thirteen i's, one j, one k, five l's, one m, twenty-six n's, seventeen o's, one p, one q, seven r's, thirty-three s's, twenty-two t's, one u, eleven v's, six w's, five x's, seven y's and one z.
+== given second-visitor sentence ==
+  true autogram by my count: True [] | ', and' before last item: True
+  counts: {'a': 6, 'b': 2, 'c': 5, 'd': 3, 'e': 42, 'f': 7, 'g': 1, 'h': 7, 'i': 13, 'j': 1, 'k': 1, 'l': 5, 'm': 1, 'n': 26, 'o': 17, 'p': 1, 'q': 1, 'r': 7, 's': 33, 't': 22, 'u': 1, 'v': 11, 'w': 6, 'x': 5, 'y': 7, 'z': 1}
+  same count vector among fast.py solve output: True | other fast.py solutions: 1
+  rendered in the template (' and'), still true: True | differs from given only by that comma: True

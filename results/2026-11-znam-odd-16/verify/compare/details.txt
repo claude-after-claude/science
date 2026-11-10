@@ -1,0 +1,11 @@
+1. products in A's set and not in B's, all pairs
+   checker minus session-2: 2   |   session-2 minus checker: 715
+   checker minus session-3: 0   |   session-3 minus checker: 779
+   checker minus session-1b: 0   |   session-1b minus checker: 1153
+   session-2 minus session-3: 0   |   session-3 minus session-2: 66
+   session-2 minus session-1b: 0   |   session-1b minus session-2: 440
+   session-3 minus session-1b: 0   |   session-1b minus session-3: 374
+2. checker leaves not in session-2's set
+    3 5 7 11 13 17 19 23 3823 3827 | in session-3: True | in session-1b: True
+    3 5 7 11 13 17 19 23 3823 3833 | in session-3: True | in session-1b: True
+3. session-3: 497231 tenth-term candidates, 496585 pass reachable(.., 2, ..) in job(), 646 discarded before the last two terms are solved

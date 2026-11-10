@@ -1,0 +1,6 @@
+K=12: nodes by depth [1, 2, 2, 2, 4, 7, 16, 49, 180, 1677]; 497165 two-term problems, 5 of them sent to `factor`; 11s
+K=12: 0 all-odd solutions
+
+real	0m11.472s
+user	0m11.311s
+sys	0m0.028s

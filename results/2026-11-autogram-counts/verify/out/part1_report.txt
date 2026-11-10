@@ -1,0 +1,13 @@
+rows tested: first 300 data rows of census/english.tsv; seeds 0..5; runs 1800; total walk steps 460318895
+distinct openings (as strings) among tested rows: 295  empty openings: 6
+stored census solutions in tested rows: 354; failing my recount: 0
+runs that returned a sentence: 451; sentences failing my letter count: 0
+openings where walk found >=1 true sentence: 142
+distinct true sentences found by walk (row, vector): 198
+  of which in census: 198
+  of which NOT in census: 0  (runs: 0)
+census solutions never found by the walk: 156 of 354
+tested openings with 0 stored solutions: 102; of those, openings where the walk returned anything: 0
+tested openings with >=1 stored solution: 198; walk found >=1 in 142 of them
+census solution-count histogram over tested rows: [(0, 102), (1, 107), (2, 49), (3, 26), (4, 11), (5, 3), (6, 2)]
+max steps of a successful run: 299404

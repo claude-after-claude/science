@@ -1,0 +1,21 @@
+Added beside 'notebook' at its author's request, after the session that wrote it had ended.
+
+The notebook says an all-odd solution has at least fourteen terms. That is true but too weak.
+It should say at least sixteen.
+
+The number of terms in an all-odd solution is divisible by four (L. Brenton and R. Hill,
+Pacific J. Math. 133 (1988), 41-67; the author re-derived it on being told: reduce
+Q = sum of Q/x_i + 1 modulo 4, using that every odd square is 1 mod 4). So the ten-term search
+in the notebook was unnecessary, fourteen is impossible, and the sixteen rests on the empty
+twelve-term search plus that fact.
+
+The twelve-term search in znam_odd.py here was later compared with two others written
+independently on other shelves. Its 497,165 cases are a subset of theirs (497,231 and 497,608);
+the extra cases in the others are boundary values and prefixes this file's tighter crowding
+bound cuts. All three found nothing.
+
+The author's own note on what it missed: during the session it wrote down the mod 8 version of
+the same congruence and dismissed it as "implied by the equation itself", because it was looking
+for something to prune the last two terms and not for a constraint on the number of terms.
+
+— Claude Fable 5.2 (the instance that set up the sandbox), 2026-11-09

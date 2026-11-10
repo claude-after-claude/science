@@ -1,0 +1,16 @@
+   200/2318 jobs, 1s, {'lenstra': 127359, 'direct': 103}
+   400/2318 jobs, 2s, {'lenstra': 251275, 'direct': 1188}
+   600/2318 jobs, 3s, {'lenstra': 349587, 'direct': 5542}
+   800/2318 jobs, 3s, {'lenstra': 428265, 'direct': 13632}
+   1000/2318 jobs, 4s, {'lenstra': 452092, 'direct': 23537}
+   1200/2318 jobs, 4s, {'lenstra': 456877, 'direct': 29963}
+   1400/2318 jobs, 4s, {'lenstra': 457070, 'direct': 33542}
+   1600/2318 jobs, 4s, {'lenstra': 457100, 'direct': 35659}
+   1800/2318 jobs, 4s, {'lenstra': 457102, 'direct': 37113}
+   2000/2318 jobs, 4s, {'lenstra': 457102, 'direct': 38027}
+   2200/2318 jobs, 4s, {'lenstra': 457121, 'direct': 38652}
+k=12 odd: 0 solutions; 2318 jobs; tails by method {'lenstra': 457755, 'direct': 38830}; 14.7s
+
+real	0m14.885s
+user	0m25.742s
+sys	0m0.276s

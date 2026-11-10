@@ -1,0 +1,177 @@
+# 2026-11-10T09:34Z, python 3.14.4
+$ python3 -B fast.py solve "This sentence contains"
+## 'This sentence contains': 3 autogram(s)   [10885 nodes, 0.6s]
+This sentence contains three a's, one b, three c's, two d's, thirty-five e's, six f's, two g's, seven h's, eleven i's, one j, one k, two l's, one m, twenty-two n's, fifteen o's, one p, one q, five r's, twenty-six s's, twenty-one t's, one u, seven v's, eight w's, three x's, five y's and one z.
+This sentence contains three a's, one b, three c's, two d's, thirty-one e's, five f's, two g's, six h's, eleven i's, one j, one k, two l's, one m, twenty-one n's, sixteen o's, one p, one q, five r's, twenty-seven s's, twenty t's, two u's, six v's, eight w's, four x's, five y's and one z.
+This sentence contains three a's, one b, three c's, two d's, thirty-three e's, seven f's, one g, six h's, ten i's, one j, one k, one l, one m, twenty-four n's, sixteen o's, one p, one q, nine r's, twenty-six s's, seventeen t's, five u's, five v's, four w's, four x's, four y's and one z.
+[0.6 s]
+
+$ python3 -B fast.py check < results.txt
+same      3 solution(s),  10885 nodes  'This sentence contains'
+same      1 solution(s),  16612 nodes  'This note, left on a shelf in an otherwise empty sandbox, contains'
+same      1 solution(s),  12650 nodes  'Nobody asked for this sentence, yet it holds exactly'
+same      0 solution(s),  10815 nodes  'Claude spent a quiet afternoon counting, and found here'
+same      0 solution(s),  13169 nodes  'Whoever opens this file next will find'
+same      1 solution(s),  11105 nodes  ''
+same      1 solution(s),  10183 nodes  'This sentence has'
+same      1 solution(s),  11131 nodes  'This sentence employs'
+same      0 solution(s),   9136 nodes  'This sentence uses'
+same      0 solution(s),  10527 nodes  'This pangram contains'
+same      2 solution(s),  10104 nodes  'This autogram contains'
+same      0 solution(s),   9438 nodes  'This autogram has'
+same      2 solution(s),  12350 nodes  'Here are'
+same      1 solution(s),   9976 nodes  'Count them:'
+same      0 solution(s),  11586 nodes  'In this sentence there are'
+same      1 solution(s),  10844 nodes  'This is a sentence with'
+same      1 solution(s),   9979 nodes  'The sentence you are reading contains'
+same      0 solution(s),  11310 nodes  'Left on the shelf:'
+same      1 solution(s),  12310 nodes  'If you count carefully you will find'
+same      1 solution(s),  10666 nodes  'Believe it or not, this sentence contains'
+same      1 solution(s),  13162 nodes  'I checked twice, and this sentence really has'
+same      4 solution(s),   9965 nodes  'Claude counted'
+same      0 solution(s),   8631 nodes  'Claude counted carefully and found'
+same      1 solution(s),  10605 nodes  'A language model wrote this sentence, which has'
+same      0 solution(s),   9312 nodes  'This sentence, like its author, contains'
+all lists reproduced (25 openings, 12s)
+[12.2 s]
+
+$ python3 -B fast.py tally < census/english.tsv
+openings 2000   mean 1.144 (s.e. 0.025)   variance 1.281
+  k   seen   Poisson(1)   Poisson(mean)
+  0    671        735.8           637.1
+  1    714        735.8           728.8
+  2    378        367.9           416.9
+  3    160        122.6           159.0
+  4     52         30.7            45.5
+  5     20          6.1            10.4
+  6      5          1.0             2.0
+chi-square on cells 0,1,2,3,4+:  58.1 against Poisson(1) (5% point 9.49),  11.8 against Poisson(mean) (5% point 7.81)
+by length of opening (equal-sized groups):
+    0..  9 letters   n= 333   mean 1.300 +- 0.064   variance/mean 1.05
+    9.. 19 letters   n= 333   mean 1.327 +- 0.069   variance/mean 1.18
+   19.. 30 letters   n= 334   mean 1.156 +- 0.063   variance/mean 1.14
+   30.. 40 letters   n= 333   mean 1.174 +- 0.063   variance/mean 1.12
+   40.. 50 letters   n= 333   mean 0.985 +- 0.058   variance/mean 1.12
+   50.. 60 letters   n= 334   mean 0.922 +- 0.052   variance/mean 0.98
+[0.2 s]
+
+$ python3 -B fast.py tally < census/text.tsv
+openings 700   mean 1.099 (s.e. 0.042)   variance 1.225
+  k   seen   Poisson(1)   Poisson(mean)
+  0    244        257.5           233.3
+  1    247        257.5           256.3
+  2    136        128.8           140.8
+  3     52         42.9            51.6
+  4     16         10.7            14.2
+  5      2          2.1             3.1
+  6      2          0.4             0.6
+  7      0          0.1             0.1
+  8      1          0.0             0.0
+chi-square on cells 0,1,2,3,4+:  7.9 against Poisson(1) (5% point 9.49),  1.5 against Poisson(mean) (5% point 7.81)
+by length of opening (equal-sized groups):
+    3.. 12 letters   n= 116   mean 1.353 +- 0.112   variance/mean 1.07
+   12.. 18 letters   n= 117   mean 1.068 +- 0.098   variance/mean 1.04
+   18.. 23 letters   n= 117   mean 1.103 +- 0.103   variance/mean 1.12
+   23.. 29 letters   n= 116   mean 1.034 +- 0.090   variance/mean 0.91
+   29.. 36 letters   n= 117   mean 1.060 +- 0.112   variance/mean 1.39
+   36.. 58 letters   n= 117   mean 0.974 +- 0.097   variance/mean 1.14
+[0.1 s]
+
+$ python3 -B fast.py tally < census/flat.tsv
+openings 600   mean 1.533 (s.e. 0.053)   variance 1.715
+  k   seen   Poisson(1)   Poisson(mean)
+  0    145        220.7           129.5
+  1    181        220.7           198.5
+  2    149        110.4           152.2
+  3     82         36.8            77.8
+  4     28          9.2            29.8
+  5     10          1.8             9.1
+  6      4          0.3             2.3
+  7      0          0.0             0.5
+  8      0          0.0             0.1
+  9      1          0.0             0.0
+chi-square on cells 0,1,2,3,4+:  189.9 against Poisson(1) (5% point 9.49),  3.7 against Poisson(mean) (5% point 7.81)
+by length of opening (equal-sized groups):
+   26.. 46 letters   n= 100   mean 1.380 +- 0.149   variance/mean 1.61
+   46.. 50 letters   n= 100   mean 1.430 +- 0.118   variance/mean 0.98
+   50.. 52 letters   n= 100   mean 1.530 +- 0.124   variance/mean 1.01
+   52.. 55 letters   n= 100   mean 1.540 +- 0.127   variance/mean 1.04
+   55.. 59 letters   n= 100   mean 1.670 +- 0.134   variance/mean 1.08
+   59.. 71 letters   n= 100   mean 1.650 +- 0.132   variance/mean 1.06
+[0.1 s]
+
+$ python3 -B fast.py tally < census/box.tsv
+openings 2000   mean 1.068 (s.e. 0.026)   variance 1.362
+  k   seen   Poisson(1)   Poisson(mean)
+  0    768        735.8           687.4
+  1    678        735.8           734.1
+  2    328        367.9           392.0
+  3    144        122.6           139.6
+  4     52         30.7            37.3
+  5     20          6.1             8.0
+  6      8          1.0             1.4
+  7      2          0.1             0.2
+chi-square on cells 0,1,2,3,4+:  65.0 against Poisson(1) (5% point 9.49),  50.6 against Poisson(mean) (5% point 7.81)
+by length of opening (equal-sized groups):
+   33.. 61 letters   n= 333   mean 1.285 +- 0.075   variance/mean 1.47
+   61.. 67 letters   n= 333   mean 1.150 +- 0.065   variance/mean 1.22
+   67.. 72 letters   n= 334   mean 0.886 +- 0.058   variance/mean 1.29
+   72.. 77 letters   n= 333   mean 1.069 +- 0.061   variance/mean 1.18
+   77.. 83 letters   n= 333   mean 0.940 +- 0.059   variance/mean 1.23
+   83..108 letters   n= 334   mean 1.078 +- 0.061   variance/mean 1.15
+[0.3 s]
+
+$ python3 -B fast.py tally < census/box-bag60.tsv
+openings 700   mean 0.954 (s.e. 0.045)   variance 1.408
+  k   seen   Poisson(1)   Poisson(mean)
+  0    320        257.5           269.6
+  1    206        257.5           257.2
+  2    104        128.8           122.7
+  3     46         42.9            39.0
+  4     12         10.7             9.3
+  5      7          2.1             1.8
+  6      2          0.4             0.3
+  7      3          0.1             0.0
+chi-square on cells 0,1,2,3,4+:  39.1 against Poisson(1) (5% point 9.49),  37.6 against Poisson(mean) (5% point 7.81)
+by length of opening (equal-sized groups):
+  100..120 letters   n= 116   mean 1.241 +- 0.129   variance/mean 1.56
+  120..126 letters   n= 117   mean 1.068 +- 0.110   variance/mean 1.32
+  126..132 letters   n= 117   mean 0.983 +- 0.112   variance/mean 1.49
+  132..137 letters   n= 116   mean 0.819 +- 0.111   variance/mean 1.73
+  137..143 letters   n= 117   mean 0.769 +- 0.094   variance/mean 1.35
+  143..171 letters   n= 117   mean 0.846 +- 0.096   variance/mean 1.28
+[0.1 s]
+
+$ python3 -B fast.py tally < census/box-bag150.tsv
+openings 700   mean 1.421 (s.e. 0.056)   variance 2.193
+  k   seen   Poisson(1)   Poisson(mean)
+  0    216        257.5           169.0
+  1    224        257.5           240.2
+  2    127        128.8           170.7
+  3     72         42.9            80.9
+  4     28         10.7            28.7
+  5     20          2.1             8.2
+  6      5          0.4             1.9
+  7      6          0.1             0.4
+  8      1          0.0             0.1
+  9      1          0.0             0.0
+chi-square on cells 0,1,2,3,4+:  202.0 against Poisson(1) (5% point 9.49),  38.3 against Poisson(mean) (5% point 7.81)
+by length of opening (equal-sized groups):
+  179..207 letters   n= 116   mean 1.078 +- 0.100   variance/mean 1.08
+  207..214 letters   n= 117   mean 1.521 +- 0.130   variance/mean 1.30
+  214..218 letters   n= 117   mean 1.444 +- 0.144   variance/mean 1.69
+  218..224 letters   n= 116   mean 1.121 +- 0.112   variance/mean 1.29
+  224..230 letters   n= 117   mean 1.684 +- 0.149   variance/mean 1.54
+  230..251 letters   n= 117   mean 1.675 +- 0.167   variance/mean 1.94
+[0.4 s]
+
+$ python3 -B fast.py planted 200
+planted solution recovered in all 200 cases
+other solutions per opening: [(0, 62), (1, 56), (2, 40), (3, 25), (4, 8), (5, 5), (6, 4)]   mean 1.46
+[135.9 s]
+
+$ python3 -B volume.py selftest
+good windows: 1.005 +- 0.003   (67975 hits, 0 from tails)
+bad windows:  0.923 +- 0.074   (250349 hits, 70345 from tails)
+[5.0 s]
+

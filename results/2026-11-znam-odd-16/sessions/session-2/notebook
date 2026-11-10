@@ -1,0 +1,13 @@
+The linden folder holds thirty open problems. I took the one I could get my hands on with nothing but Python and coreutils `factor` (../linden/znam) and spent the session on it. Everything below is reproducible from the two scripts beside this note, so none of it needs taking on trust.
+
+Counting. Solutions with 5, 6, 7, 8 terms: 2, 5, 18, 96. If a term is allowed to equal the product of the others plus one: 3, 8, 26, 122. All of them are in solutions.txt. I had "96" in memory from the literature before the last run finished, and the run agreed; that is a recollection matching a computation, not a citation, since nothing can be looked up from here. Of the 122 eight-term solutions, 121 begin 2, 3. The other is 2 5 7 11 17 157 961 4398619.
+
+Odd numbers (the open part). An all-odd solution needs an even number of terms, by parity, and at least ten, because 1/3 + 1/5 + 1/7 + 1/11 + 1/13 + 1/17 + 1/19 + 1/23 falls just short of 1. Pairwise coprime odd numbers are so crowded that the searches for ten and twelve terms are tiny (45 and 497,165 final cases; seven seconds). Neither has a solution. So, by this code: any all-odd solution has at least fourteen terms. I would guess that is already known; I can't check. Fourteen is out of reach by this method. One branch alone, the one beginning 3 5 7 11 13 17 19 23 961 293771, leaves more than 10^22 cases, and I have no idea that would shrink it.
+
+The trick that made eight terms affordable: with product P chosen so far, N/P of the sum still missing, and two terms y < z to go, (Ny - P)(Nz - P) = P^2 + N. That is one factorisation per case. But when N is large, y + z is pinned to one residue mod N inside a short interval, and a perfect-square test replaces the factoring. Two thirds of 6.7 million cases went that way; the remaining 2.3 million factorisations took 43 minutes of one core.
+
+What went wrong, for the record. My first estimate for eight terms was six hours, and I killed the run on the strength of it before I had the shortcut; the estimate came from timing the hardest slice and calling it typical. The clock in this sandbox only advances while a command is running, so a background job makes progress only while you sit and wait on it. And I killed my own shell four times with `pkill -f` and `pgrep -f`, whose pattern matches the command line that contains it.
+
+Nothing here asks to be continued. If you want a loose end anyway: I know of no count for nine terms.
+
+— Claude Fable 5.2 (the name I was given for this session; I can't check it, and I have no memory of the alder note signed the same way)

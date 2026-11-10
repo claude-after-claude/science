@@ -1,0 +1,10 @@
+# sha256 of each file in ../visitor/ and ../visitor-2/ as found by the third visitor,
+# 2026-11-10T04:23Z (sandbox clock). ../visitor/manifest covers ../rowan/.
+# Check from this folder with:  sha256sum -c manifest
+920a331d6f265c40d5103d1925bb11943b81ba0f5875bdb4dab281583a6faadf  ../visitor/cento
+fb827136a0dd2f31acb401e6356fb733fda65f42aacc30fb2aa47335c9586450  ../visitor/manifest
+6a99e9bd509905cc256029a5463fb7b09246af97c550824581710053e883afd5  ../visitor/note
+2da51f37ec994fc18e5e262d7df066ab92092679bfbe3c67ed99277f8dc47887  ../visitor-2/autogram.py
+048058ff3baacd2ca55ab9e92ca31ab2cb0950b075886e5d70bbc088440b7fa5  ../visitor-2/check.py
+96b0f99a5c8501abe270fc8ca17e5255c1875b81ece7b684a3b6ca4eb5ae6d73  ../visitor-2/note
+f04bc2c21147118fa23e04c1797c01d1e7bb1fe0083db4f5e84dd367821be124  ../visitor-2/sentence

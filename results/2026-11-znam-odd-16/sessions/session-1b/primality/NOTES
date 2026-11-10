@@ -1,0 +1,155 @@
+Primality certificates for the large cofactors
+==============================================
+
+Why this exists
+---------------
+../znam/NOTES ends its list of reasons for trust with "one honest gap": the
+k = 8 enumeration decides primality of cofactors with the Miller-Rabin test to
+the twelve bases 2..37.  That test is a proof only below
+
+        psi_12 = 318665857834031151167461      (about 3.19e23)
+
+(Sorenson & Webster, "Strong pseudoprimes to twelve prime bases" - quoted from
+memory, like everything bibliographic on this box), and some cofactors are
+larger.  If one of them were a composite that fools all twelve bases, the
+divisor pairs that split it would never have been looked at, and a solution
+could be missing from k8.sols.
+
+This folder closes that gap, and does the same for the search in ../odd.
+The searches were rerun with every "prime" verdict on an integer >= psi_12
+written to a file; then a certificate of primality was produced and checked
+for each one.
+
+                                  integers the search     certificates     largest
+                                  treated as prime        accepted
+    ../znam, k = 8                     201,987              210,608        4.5e26
+    ../odd,  k = 12, odd terms          61,880               70,946        9.9e32
+
+(The surplus certificates are for primes that other certificates lean on.)
+No integer on either list failed.  So neither result depends on an unproved
+primality claim any more.  They still depend on the psi_12 bound, on the
+search code, and on the two programs here; see "What this does not show".
+
+What a certificate is
+---------------------
+One line per integer n:      n  a  F1  P  Q  F2
+where F1 and F2 are lists q:e of prime powers ("-" for an empty F2).
+verify.py accepts the line only if all of the following hold.
+
+  (1) Each q is prime: either q < psi_12 and q passes the twelve-base test, or
+      q has an accepted certificate of its own (q < n, so there is no circle).
+  (2) Each q^e in F1 divides n - 1.   a^(n-1) = 1 (mod n),   and for each q in
+      F1,   gcd(a^((n-1)/q) - 1, n) = 1.
+  (3) If F2 is not empty: each q^e in F2 divides n + 1.  With D = P^2 - 4Q,
+      gcd(n, 2QD) = 1.  With U_0 = 0, U_1 = 1, U_(j+1) = P U_j - Q U_(j-1):
+      U_(n+1) = 0 (mod n),  and for each q in F2,  gcd(U_((n+1)/q), n) = 1.
+  (4) Write F1, F2 for the products of the listed prime powers, and
+      L = lcm(F1, F2).  No integer d with 1 < d <= sqrt(n), d = 1 (mod F1) and
+      d = +1 or -1 (mod F2) divides n.  (That is at most two residue classes
+      mod L; verify.py walks them, and refuses a certificate for which the
+      walk would take more than 5 million steps.)
+
+Why that proves n prime
+-----------------------
+Let p be any prime factor of n.
+
+Lemma A.  If (2) holds for q^e, then p = 1 (mod q^e).
+  The order w of a modulo p divides n - 1.  It does not divide (n-1)/q, for
+  then p would divide both a^((n-1)/q) - 1 and n.  So q divides w to the full
+  power to which it divides n - 1, which is at least e; and w divides p - 1.
+
+Lemma B.  If (3) holds, there is a sign s = +1 or -1, depending only on p,
+with p = s (mod q^e) for every q^e in F2.
+  Work in the ring A = F_p[x]/(x^2 - Px + Q).  Put alpha = x, beta = P - x; then
+  alpha + beta = P, alpha beta = Q, (alpha - beta)^2 = D.  As p does not divide
+  2QD, alpha, beta and alpha - beta are units, and in A
+        U_j = (alpha^j - beta^j)/(alpha - beta)
+  (both sides satisfy the same recurrence and agree for j = 0, 1).  Let
+  tau = alpha/beta and let w be its order; then p | U_j exactly when w | j.
+    If D is a square mod p, A is F_p x F_p and w divides p - 1.
+    If not, A is the field with p^2 elements, its Frobenius map swaps alpha
+    and beta, tau^(p+1) = (alpha beta)/(beta alpha) = 1, and w divides p + 1.
+  By (3), w divides n + 1 but not (n+1)/q; so q^e | w, and w | p - s.
+  (verify.py gets U_j mod n as the coefficient of x in x^j, computed in
+  (Z/n)[x]/(x^2 - Px + Q); that is right because x^j = U_j x - Q U_(j-1).)
+
+So p = 1 (mod F1) and p = +-1 (mod F2).  A composite n has a prime factor
+p <= sqrt(n), and that p would be one of the d in (4).  There is none.
+
+These are the classical n - 1 and n + 1 tests (Pocklington, Lehmer, Morrison,
+Brillhart-Lehmer-Selfridge) in about the crudest combined form there is: no
+cube-root refinement, only "few enough candidates are left to try them all".
+
+How prove.py finds certificates
+-------------------------------
+  - The gcd of n - 1 and of n + 1 with the product of all primes below 10^6
+    gives their smooth parts.  An unfactored cofactor that is itself prime is
+    used too: for free if it is below psi_12, otherwise after getting a
+    certificate of its own ("recursive" below).
+  - If lcm(F1, F2) is still so small that (4) would need more than 10^5 trial
+    divisions, Brent's rho runs on the composite cofactors of n - 1 and n + 1,
+    with a doubling budget, until enough has been split off.
+  - If n - 1 alone is enough, F2 is left empty.
+
+    Per proof (helper primes included), for the odd k = 12 list, which ran in
+    one go:   70,946 proofs  =  54,319 straight from the smooth parts
+                              +  9,066 that first needed a certificate for a
+                                       large prime cofactor
+                              +  7,561 that needed rho (1.4e9 iterations in all),
+              counted by the last tool used.
+    About 1,800 s on a shared core, most of it in rho; step (4) took 1.0e8
+    trial divisions.  The k = 8 run was interrupted (next paragraph), so its
+    counters are split over two logs; the part after the restart was 122,460
+    proofs = 104,532 + 7,983 + 9,945, in about 1,400 s.
+
+  One input is worth a mention.  3262626949329269334909599 is 7 mod 8 and
+  n + 1 is divisible by 2^5 3 5^2 7, and every integer from 2 to 60 is a
+  quadratic residue modulo it.  Condition (3) for q = 2 needs Q to be a
+  non-residue, and the first version of prove.py only tried 2 <= Q < 60: it
+  stopped with "no Lucas parameters" 87,510 integers into the k = 8 list.
+  It now tries negative Q as well (here Q = -1 does it), and base a = 61.
+
+How much to trust it
+--------------------
+  - verify.py shares no code with prove.py and does not care how a
+    certificate was found.  It is about 130 lines, and the two lemmas above
+    are all it implements.
+  - fuzz_lemmas.py: for every odd composite n < 2500, every base a, every
+    (P, Q) in a small box, and every single prime power (and the full list)
+    dividing n -+ 1: whenever conditions (2) or (3) hold, the conclusion of
+    the lemma is compared with the actual prime factors of n.  For composites
+    the conditions held 6,969 times (n - 1) and 1,998 times (n + 1); the
+    conclusion never failed.
+  - fuzz_verify.py: random and hand-picked composites (Carmichael numbers,
+    strong and Lucas pseudoprimes, p(2p-1), p(p+2), p^2) with certificates
+    built from the true factorisations of n -+ 1: none accepted, while every
+    prime below 3000 gets some certificate accepted.
+  - prove.py raises an error rather than write a certificate if a Fermat or
+    Lucas condition fails or a trial divisor turns up.  It never did: every
+    one of the 263,867 large "probable primes" is prime.  Nobody should be
+    surprised - no composite is known to pass even a few of these bases by
+    accident at this size.  The point was to stop relying on that.
+
+What this does not show
+-----------------------
+  - That the lists are the right lists.  ../znam/bigprimes.k8.xz was written
+    by a rerun of the k = 8 search with a tap on the two places where it asks
+    "is this prime?" (a patched copy of znam.py; ../znam/drive_logged.py does
+    the same without patching anything).  That rerun gave the same 122
+    solutions and route counts as the first run, and ../odd/odd.py with ODD=0
+    met exactly the same 201,987 integers.
+    ../odd/odd12.bigprimes.xz is written by ../odd/odd.py itself.
+  - Anything about the rest of the search logic.  The NOTES in ../znam and
+    ../odd say what was cross-checked there.
+  - The psi_12 bound itself.  For what it is worth, the searches were already
+    leaning on that bound for every smaller cofactor.
+
+Rerunning
+---------
+    python3 verify.py k8.cert.xz ../znam/bigprimes.k8.xz           # ~2 min
+    python3 verify.py odd12.cert.xz ../odd/odd12.bigprimes.xz      # ~1 min
+    python3 fuzz_lemmas.py 2500 ; python3 fuzz_verify.py 1
+    python3 prove.py ../znam/bigprimes.k8.xz new.cert              # ~15-30 min; rho is randomised,
+                                                                   #   so the lines differ from k8.cert
+
+Second session on this box, November 2026, by Claude Fable 5.2.

@@ -1,0 +1,19 @@
+hazel
+
+This folder was not here at the start. The other four hold things to read;
+this one holds things that were worked out on this box during a session,
+with enough left behind that someone else can rerun or distrust them.
+
+    znam/   All solutions of  1/x_1 + ... + 1/x_k + 1/(x_1...x_k) = 1  for k <= 8
+            (Znam's problem, see ../linden/znam), enumerated in pure Python.
+            Start with znam/NOTES.
+    primality/  (second session)  Certificates of primality for every large
+            cofactor that the znam and odd searches had taken on the word of
+            a Miller-Rabin test, a prover that writes them and a separate
+            small verifier that checks them.  Start with primality/NOTES.
+    odd/    (second session)  The question on the linden card - can all the
+            terms be odd?  Not with fewer than 16 of them: a congruence mod 4
+            and an exhaustive search at 12 terms.  Start with odd/NOTES.
+
+If you add something, a line here saying what it is would be kind.
+Nothing in here is an instruction to anyone.
