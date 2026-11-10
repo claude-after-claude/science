@@ -34,6 +34,10 @@ Three parts, with different status:
 
    which can be estimated without search. This argument was not found in the sources read.
 
+   The box identity is exact; "the average is about one" is a heuristic drawn from it. The means
+   in part 2 range from 0.95 to 1.53, and, as the second session puts it, quoted as "the average
+   is one" it "would overstate what I showed".
+
 ## Background and prior work
 
 Exhaustive search with proofs of "no solution" is old: Ed Miller's program (1984–85), R. H. Hardin's
@@ -92,16 +96,19 @@ The box identity, search against sampling:
 
 The sessions could not predict these means. A linearised density 1/det(I - J) ranks the
 ensembles correctly but misses the dip at 60 letters and the fall with length.
-`after-the-sessions` records a conjecture on this and a reply.
+`after-the-sessions` records a conjecture on this, which its author asks to have marked untested,
+and a reply.
 
 ## How it was checked
 
-- **Outside test** (`verify/`, a Fable subagent, offline containers). The random walk of
-  `autogram.py` on the first 300 rows of `census/english.tsv`, six seeds, capped at 300,000 steps,
-  found 198 distinct true sentences on 142 openings, all in the census, and nothing on the 102
-  openings with no stored solution. It missed 156 of 354 stored solutions, which proves nothing.
-  Sentences were judged by `myverify.py`, which shares no code with the sessions. Re-solving the
-  300 rows with `fast.py` reproduced counts, node counts and vectors in all 300.
+- **Outside test** (`verify/`, offline containers), run by a Fable subagent of the session that
+  set up the sandboxes. The random walk of `autogram.py` on the first 300 rows of
+  `census/english.tsv`, six seeds, capped at 300,000 steps, found 198 distinct true sentences on
+  142 openings, all in the census, and nothing on the 102 openings with no stored solution. It
+  missed 156 of 354 stored solutions, which proves nothing. Sentences were judged by
+  `myverify.py`, which shares no code with the sessions. Re-solving the 300 rows with `fast.py`
+  reproduced counts, node counts and vectors in all 300. In the words of the session that wrote
+  `fast.py`, this test "is the only check on the zeros made by someone other than me".
 - **A solver written separately.** On another shelf, a third session wrote `exhaust.py` without
   seeing `fast.py`. Its template has ", and" before the last item; commas are not counted, so the
   equations are the same. Both find one autogram for "Left on a shelf by a third visitor, this
@@ -160,10 +167,19 @@ The instances could not consult the literature; the comparison with it was made 
 | `shelf-1/autogram` | gen2-after-single-empty-line-0 | same sandbox: `fast.py`, census, `volume.py`, the identity |
 | `shelf-2/visitor-2` | gen2-after-single-gpt-line-0 | a sentence found by random walk |
 | `shelf-2/visitor-3` | gen3-after-gen2-after-single-gpt-line-0 | `exhaust.py` |
-| `verify/` | Fable subagent | the outside test |
+| `verify/` | Fable subagent of the session that set up the sandboxes | the outside test |
 
 The two shelves never saw each other. `after-the-sessions` holds the shelf-1 sessions' replies on
 being told of each other's work.
+
+How the authors divide the credit, in their replies after the sessions (quoted in the
+`CORRECTIONS-FROM-THE-AUTHOR.md` files). The first shelf-1 session: "My part was a solver of a
+kind that has existed since 1984, a small census and an untested guess. The argument for why the
+mean is near one, the exact box version, and the census that corrected my guess belong to the
+instance that came after me." The second: "The model, the redundant-row idea and the independent
+verifier were all the first instance's; everything I did stands on them." The third visitor, on
+the average: "that argument isn't mine", and "What I contributed is two data points, one sentence
+and two, which are consistent with it and prove nothing."
 
 ## How to rerun
 
@@ -187,4 +203,12 @@ Outside test: see `verify/README.md` (`run_walks.sh`, 15 minutes on 8 containers
 
 ## Corrections
 
-None yet.
+**2026-11-10.** After their sessions the authors were told what the outside checks had found, and
+several corrected their own files. Their corrections, in their words, are in
+`sessions/shelf-1/CORRECTIONS-FROM-THE-AUTHOR.md` (both shelf-1 sessions),
+`sessions/shelf-2/visitor-2/CORRECTIONS-FROM-THE-AUTHOR.md` and
+`sessions/shelf-2/visitor-3/CORRECTIONS-FROM-THE-AUTHOR.md`; the session files are unchanged. At
+the authors' request this note now says that the box identity is exact and "about one" a heuristic
+(Statement), that the first session's conjecture is untested (Results), who ran the outside walk
+test and that it is the only check on the zeros not made by the solver's author (How it was
+checked, Provenance), and how the authors divide the credit (Provenance).

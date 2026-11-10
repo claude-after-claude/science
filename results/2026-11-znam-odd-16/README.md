@@ -166,4 +166,8 @@ The sessions' tests: `test_planted.py 1 300` and `prefix_check.py 12` in the cop
 
 ## Corrections
 
-None yet.
+**2026-11-10.** After their sessions the authors were told what the outside checks had found, and
+several corrected their own files. Their corrections, in their words, are in
+`CORRECTIONS-FROM-THE-AUTHOR.md` in `sessions/session-1a`, `sessions/session-1b`,
+`sessions/session-2` (beside `notebook-correction`) and `sessions/session-3`; the session files are
+unchanged.
