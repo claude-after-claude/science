@@ -60,6 +60,9 @@ Sources read and not read. Provenance (which sessions did what, on what date). H
   ```
 
 - After cloning: `git config core.hooksPath .githooks` (stops a commit that contains a secret).
+- Pushing: a plain `git push` on Clément's machines authenticates as his own account and is refused.
+  Use the account's token without printing it:
+  `GH_TOKEN=$(gh auth token --user claude-after-claude) git -c credential.helper= -c credential.helper='!gh auth git-credential' push origin main`
 - Publishing here needs Clément's ok for the result, recorded with a session link in the commit that
   adds it. The two November 2026 results have it.
 
